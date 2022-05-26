@@ -1,0 +1,1937 @@
+                                                                      :root {
+                                                                         --color1: #1771F1;
+                                                                         --color2: #5199FF;
+                                                                         --color3: #fff;
+                                                                         --color4: #f5f4f4;
+                                                                         --font-family1: 'Noto Sans';
+                                                                         --font-family2: 'Noto Sans HK';
+                                                                         --font-family3: 'Russo One';
+                                                                         --font-family4: 'Gotham Pro';
+                                                                     }
+                                                                     
+                                                                     * {
+                                                                         font-family: var(--font-family1), var(--font-family2), Arial, sans-serif;
+                                                                         background-color: transparent;
+                                                                         box-sizing: border-box;
+                                                                     }
+                                                                     
+                                                                     @font-face {
+                                                                         font-family: 'Gotham Pro';
+                                                                         src: local('Gotham Pro'), url('/font/GothamPro.woff') format('woff');
+                                                                         font-display: swap;
+                                                                         font-weight: 400;
+                                                                         font-style: normal;
+                                                                     }
+                                                                     
+                                                                     body {
+                                                                         background-color: var(--color4) !important;
+                                                                         max-width: 1920px;
+                                                                         position: relative;
+                                                                     }
+                                                                     
+                                                                     ul,
+                                                                     li,
+                                                                     a,
+                                                                     p,
+                                                                     h1,
+                                                                     h2,
+                                                                     h3 {
+                                                                         text-decoration: none;
+                                                                         list-style-type: none;
+                                                                         margin: 0;
+                                                                         padding: 0;
+                                                                     }
+                                                                     
+                                                                     .main {}
+                                                                     
+                                                                     .section-position {
+                                                                         max-width: 1320px;
+                                                                         margin: 0 auto;
+                                                                         padding-left: 50px !important;
+                                                                         padding-right: 50px !important;
+                                                                     }
+                                                                     
+                                                                     .section-indent {
+                                                                         padding: 80px 0;
+                                                                     }
+                                                                     
+                                                                     .order {
+                                                                         position: relative;
+                                                                         width: 100%;
+                                                                         background-color: transparent;
+                                                                     }
+                                                                     
+                                                                     .back {
+                                                                         position: absolute;
+                                                                         bottom: 0;
+                                                                         right: 0;
+                                                                         width: 100%;
+                                                                         height: 100%;
+                                                                         background: no-repeat bottom/cover url('/img/order-back.png');
+                                                                         z-index: -1;
+                                                                     }
+                                                                     
+                                                                     .order__body {
+                                                                         padding-top: 40px;
+                                                                         padding-bottom: 10px;
+                                                                     }
+                                                                     
+                                                                     .header {
+                                                                         display: flex;
+                                                                         position: relative;
+                                                                         margin-bottom: 100px;
+                                                                     }
+                                                                     
+                                                                     .logo {
+                                                                         display: inline;
+                                                                         transition: all .5s ease;
+                                                                         width: 200px;
+                                                                         height: 70px;
+                                                                     }
+                                                                     
+                                                                     .logo:hover {
+                                                                         transform: scale(1.05);
+                                                                     }
+                                                                     
+                                                                     .logo__link {
+                                                                         cursor: pointer;
+                                                                     }
+                                                                     
+                                                                     .logo__img {
+                                                                         width: 100%;
+                                                                         height: 100%;
+                                                                     }
+                                                                     
+                                                                     .menu {
+                                                                         position: fixed;
+                                                                         left: 47.7%;
+                                                                         top: 8px;
+                                                                         cursor: pointer;
+                                                                         z-index: 100;
+                                                                         transition: all .5s ease;
+                                                                     }
+                                                                     
+                                                                     .unvisible-layer {
+                                                                         position: absolute;
+                                                                         width: 100%;
+                                                                         height: 100%;
+                                                                         background-color: rgba(55, 55, 55, .9);
+                                                                     }
+                                                                     /* .menu:hover .nav {
+  transform: translateY(0);
+} */
+                                                                     
+                                                                     .menu__icon__rect1,
+                                                                     .menu__icon__rect2,
+                                                                     .menu__icon__rect3 {
+                                                                         transition-property: y, height, transform;
+                                                                         transition-duration: .5s;
+                                                                         transition-timing-function: ease;
+                                                                     }
+                                                                     
+                                                                     .menu:hover .menu__icon__rect1 {
+                                                                         height: 7px;
+                                                                     }
+                                                                     
+                                                                     .menu:hover .menu__icon__rect2 {
+                                                                         transform: translateY(5px);
+                                                                         height: 7px;
+                                                                     }
+                                                                     
+                                                                     .menu:hover .menu__icon__rect3 {
+                                                                         transform: translateY(10px);
+                                                                         height: 7px;
+                                                                     }
+                                                                     
+                                                                     .menu__icon__rect1-is-active {
+                                                                         height: 7px;
+                                                                     }
+                                                                     
+                                                                     .menu__icon__rect2-is-active {
+                                                                         height: 7px;
+                                                                     }
+                                                                     
+                                                                     .menu__icon__rect3-is-active {
+                                                                         height: 7px;
+                                                                     }
+                                                                     
+                                                                     .menu__icon {
+                                                                         width: 100px;
+                                                                         height: 70px;
+                                                                     }
+                                                                     
+                                                                     .menu__icon__rect1 {}
+                                                                     
+                                                                     .menu__icon__rect2 {}
+                                                                     
+                                                                     .menu__icon__rect3 {}
+                                                                     
+                                                                     .nav {
+                                                                         position: absolute;
+                                                                         display: flex;
+                                                                         flex-direction: column;
+                                                                         justify-content: stretch;
+                                                                         align-items: stretch;
+                                                                         flex-wrap: wrap;
+                                                                         top: -200px;
+                                                                         left: -176px;
+                                                                         padding-top: 200px;
+                                                                         min-height: 450px;
+                                                                         transform: translateY(-150%);
+                                                                         transition: transform .5s ease;
+                                                                     }
+                                                                     
+                                                                     .nav:target {
+                                                                         transform: translateY(0);
+                                                                     }
+                                                                     
+                                                                     .nav:target .unvisible-layer {}
+                                                                     
+                                                                     .nav__item {
+                                                                         list-style-type: none;
+                                                                         background-color: var(--color2);
+                                                                         border-radius: 5px;
+                                                                         margin-bottom: 4px;
+                                                                         transition-property: box-shadow, background-color;
+                                                                         transition-duration: .5s;
+                                                                         transition-timing-function: ease;
+                                                                         box-shadow: 0 0 5px var(--color1);
+                                                                         transition: transform .2s ease;
+                                                                         text-align: center;
+                                                                         width: 450px !important;
+                                                                     }
+                                                                     
+                                                                     .nav__item:hover {
+                                                                         box-shadow: 0 0 25px var(--color1);
+                                                                         background-color: var(--color1)
+                                                                     }
+                                                                     
+                                                                     .nav__item:active {
+                                                                         transform: translateY(2px);
+                                                                     }
+                                                                     
+                                                                     .nav__item-is-active {
+                                                                         box-shadow: 0 0 25px var(--color1);
+                                                                         background-color: var(--color1)
+                                                                     }
+                                                                     
+                                                                     .nav__link {
+                                                                         display: flex;
+                                                                         justify-content: center;
+                                                                         color: var(--color3) !important;
+                                                                         font-size: 24px;
+                                                                         line-height: 32px;
+                                                                         padding: 10px 50px;
+                                                                         text-transform: uppercase;
+                                                                         letter-spacing: 2px;
+                                                                         font-weight: 700;
+                                                                     }
+                                                                     
+                                                                     .order__header {}
+                                                                     
+                                                                     .heading {
+                                                                         font-family: var(--font-family3), Arial, sans-serif;
+                                                                         font-size: 48px;
+                                                                         font-weight: 500;
+                                                                         margin-bottom: 50px;
+                                                                     }
+                                                                     
+                                                                     .text_color {
+                                                                         color: var(--color1);
+                                                                         font-family: var(--font-family3), Arial, sans-serif;
+                                                                     }
+                                                                     
+                                                                     .order__contant {
+                                                                         max-width: 800px;
+                                                                     }
+                                                                     
+                                                                     .order__list {}
+                                                                     
+                                                                     .order__desc {
+                                                                         font-size: 32px;
+                                                                         line-height: 48px;
+                                                                         margin-bottom: 70px;
+                                                                     }
+                                                                     
+                                                                     .order__desc_color {
+                                                                         color: red;
+                                                                     }
+                                                                     
+                                                                     .btn_position {
+                                                                         margin-left: 20%;
+                                                                     }
+                                                                     
+                                                                     .text {
+                                                                         font-size: 28px;
+                                                                         line-height: 36px;
+                                                                         margin: 0;
+                                                                     }
+                                                                     
+                                                                     .text_indent {
+                                                                         margin-bottom: 60px;
+                                                                     }
+                                                                     
+                                                                     .order_text {
+                                                                         max-width: 700px;
+                                                                     }
+                                                                     
+                                                                     .cons-link {
+                                                                         transition: all .5s ease;
+                                                                     }
+                                                                     
+                                                                     .cons-link:hover {
+                                                                         color: var(--color1);
+                                                                     }
+                                                                     
+                                                                     .small-text_color {
+                                                                         color: var(--color2);
+                                                                     }
+                                                                     
+                                                                     .btn {
+                                                                         display: flex;
+                                                                         justify-content: center;
+                                                                         align-items: center;
+                                                                         color: var(--color3);
+                                                                         font-family: var(--font-family3), Arial, sans-serif;
+                                                                         background: linear-gradient(180deg, #5199FF 0%, #1771F1 100%);
+                                                                         box-shadow: 0px 20px 50px rgb(81 153 255 / 30%), 0px 6px 4px #1755ac;
+                                                                         border-radius: 100px;
+                                                                         border: none;
+                                                                         padding: 0;
+                                                                         font-size: 28px;
+                                                                         line-height: 36px;
+                                                                         width: 400px;
+                                                                         height: 100px;
+                                                                         transition: all .3s ease;
+                                                                     }
+                                                                     
+                                                                     .btn:hover {
+                                                                         transform: translateY(-3px);
+                                                                         box-shadow: 0px 20px 50px rgb(81 153 255 / 30%), 0px 11px 10px #1755ac;
+                                                                     }
+                                                                     
+                                                                     .btn:active {
+                                                                         transform: translateY(6px);
+                                                                         box-shadow: 0px 20px 50px rgb(81 153 255 / 30%), 0px 0px 0px #1755ac;
+                                                                     }
+                                                                     
+                                                                     .order__back-all {}
+                                                                     
+                                                                     .order__back {}
+                                                                     
+                                                                     .heading_underline {
+                                                                         display: inline-block;
+                                                                         padding-bottom: 10px;
+                                                                         border-bottom: 3px solid var(--color1);
+                                                                         margin-bottom: 90px;
+                                                                     }
+                                                                     
+                                                                     .more__body {
+                                                                         position: relative;
+                                                                         display: inline-block;
+                                                                     }
+                                                                     
+                                                                     .more__list {
+                                                                         max-width: 800px;
+                                                                         min-height: 600px;
+                                                                     }
+                                                                     
+                                                                     .more__description:not(:last-child) {
+                                                                         margin-bottom: 44px;
+                                                                     }
+                                                                     
+                                                                     .description-heading {
+                                                                         font-size: 32px;
+                                                                         line-height: 48px;
+                                                                         margin: 0;
+                                                                         margin-bottom: 16px;
+                                                                     }
+                                                                     
+                                                                     .more__low {
+                                                                         max-width: 600px;
+                                                                     }
+                                                                     
+                                                                     .more__text {}
+                                                                     
+                                                                     .arrow {
+                                                                         margin-left: 15px;
+                                                                     }
+                                                                     
+                                                                     .arrow-left {
+                                                                         margin-right: 15px;
+                                                                         transform: rotate(180deg);
+                                                                     }
+                                                                     
+                                                                     .description-list {}
+                                                                     
+                                                                     .descrioption-item {}
+                                                                     
+                                                                     .video {
+                                                                         position: absolute;
+                                                                         width: 600px;
+                                                                         height: 400px;
+                                                                         border: 2px solid var(--color1);
+                                                                     }
+                                                                     
+                                                                     .more__video {
+                                                                         top: 70%;
+                                                                         left: 90%;
+                                                                         background: no-repeat left center/cover url('/img/more-img1.jpg')
+                                                                     }
+                                                                     
+                                                                     .step {}
+                                                                     
+                                                                     .step__header {}
+                                                                     
+                                                                     .step__body {
+                                                                         display: flex;
+                                                                         flex-direction: column;
+                                                                         align-items: center;
+                                                                     }
+                                                                     
+                                                                     .step__list {
+                                                                         border-left: 4px solid var(--color1);
+                                                                         margin-bottom: 100px;
+                                                                         display: flex;
+                                                                         flex-direction: column;
+                                                                         justify-content: space-between;
+                                                                         min-height: 1000px;
+                                                                         padding-left: 40PX;
+                                                                     }
+                                                                     
+                                                                     .step__item {
+                                                                         position: relative;
+                                                                         max-width: 900px;
+                                                                         font-weight: bold;
+                                                                         font-size: 30px;
+                                                                         line-height: 45px;
+                                                                         padding-left: 30px;
+                                                                     }
+                                                                     
+                                                                     .item-left {
+                                                                         position: absolute;
+                                                                         top: 15%;
+                                                                         bottom: 15%;
+                                                                         left: -74px;
+                                                                         width: 64px;
+                                                                         height: 64px;
+                                                                         border-radius: 50%;
+                                                                         background-color: var(--color1);
+                                                                         color: var(--color3);
+                                                                         display: flex;
+                                                                         justify-content: center;
+                                                                         align-items: center;
+                                                                         font-size: 28px;
+                                                                         line-height: 27px;
+                                                                     }
+                                                                     
+                                                                     .item-first {
+                                                                         top: 0%;
+                                                                         bottom: 50%;
+                                                                     }
+                                                                     
+                                                                     .item-last {
+                                                                         top: 50%;
+                                                                         bottom: 0%;
+                                                                     }
+                                                                     
+                                                                     .step__text {
+                                                                         text-align: center;
+                                                                     }
+                                                                     
+                                                                     .about {
+                                                                         display: flex;
+                                                                         flex-direction: column;
+                                                                     }
+                                                                     
+                                                                     .about__header {}
+                                                                     
+                                                                     .about__body {
+                                                                         position: relative;
+                                                                         display: inline-block;
+                                                                     }
+                                                                     
+                                                                     .about__box {
+                                                                         display: inline-block;
+                                                                         width: 750px;
+                                                                         padding-bottom: 40px;
+                                                                         padding-right: 50px;
+                                                                     }
+                                                                     
+                                                                     .about__list {
+                                                                         position: relative;
+                                                                         display: flex;
+                                                                         flex-direction: row;
+                                                                         flex-wrap: wrap;
+                                                                         justify-content: space-evenly;
+                                                                         align-items: center;
+                                                                         max-width: 100%;
+                                                                         height: 300px;
+                                                                     }
+                                                                     
+                                                                     .box {
+                                                                         background-color: var(--color3);
+                                                                         box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+                                                                         padding: 40px 48px;
+                                                                     }
+                                                                     
+                                                                     .about__content {
+                                                                         flex: 0 0 35%;
+                                                                         display: flex;
+                                                                         flex-direction: column;
+                                                                         align-items: center;
+                                                                         justify-content: stretch;
+                                                                     }
+                                                                     
+                                                                     .point {
+                                                                         font-weight: bold;
+                                                                         font-size: 24px;
+                                                                         line-height: 28px;
+                                                                     }
+                                                                     
+                                                                     .doing {
+                                                                         font-weight: normal;
+                                                                         font-size: 24px;
+                                                                         line-height: 40px;
+                                                                         max-width: 250px;
+                                                                         text-align: center;
+                                                                     }
+                                                                     
+                                                                     .about__video {
+                                                                         top: 25%;
+                                                                         left: 55%;
+                                                                         background: no-repeat left center/cover url('/img/about-img.jpg')
+                                                                     }
+                                                                     
+                                                                     .about__text {}
+                                                                     
+                                                                     .pack {
+                                                                         margin-bottom: 60px;
+                                                                     }
+                                                                     
+                                                                     .section-indent {}
+                                                                     
+                                                                     .section-position {}
+                                                                     
+                                                                     .heading {}
+                                                                     
+                                                                     .heading_underline {}
+                                                                     
+                                                                     .text_color {}
+                                                                     
+                                                                     .pack__list {}
+                                                                     
+                                                                     .item {
+                                                                         width: 100%;
+                                                                         display: flex;
+                                                                     }
+                                                                     
+                                                                     .item:not(:last-child) {
+                                                                         margin-bottom: 200px;
+                                                                     }
+                                                                     
+                                                                     .item__left {}
+                                                                     
+                                                                     .item__body {
+                                                                         max-width: 800px;
+                                                                         min-height: 400px;
+                                                                         position: relative;
+                                                                         display: flex;
+                                                                         flex-direction: column;
+                                                                     }
+                                                                     
+                                                                     .item__body-left {
+                                                                         order: 1000;
+                                                                         margin-left: auto;
+                                                                     }
+                                                                     
+                                                                     .pack__box {
+                                                                         padding-right: 100px;
+                                                                         padding-top: 50px;
+                                                                         padding-left: 80px;
+                                                                         min-height: 500px;
+                                                                         display: flex;
+                                                                         flex-direction: column;
+                                                                     }
+                                                                     
+                                                                     .pack__box-right {
+                                                                         padding-top: 80px;
+                                                                         padding-left: 110px;
+                                                                         padding-right: 80px;
+                                                                         min-height: 500px;
+                                                                         display: flex;
+                                                                         flex-direction: column;
+                                                                     }
+                                                                     
+                                                                     .item__heading {
+                                                                         font-size: 32px;
+                                                                         line-height: 1.2;
+                                                                         color: var(--color1);
+                                                                         font-family: var(--font-family3), sans-serif;
+                                                                         display: flex;
+                                                                     }
+                                                                     
+                                                                     ._indent {
+                                                                         margin-bottom: 10px;
+                                                                     }
+                                                                     
+                                                                     .item__bottom {
+                                                                         order: 100;
+                                                                         margin-top: auto;
+                                                                         padding-right: 30px;
+                                                                         position: relative;
+                                                                     }
+                                                                     
+                                                                     .item__bottom-right {
+                                                                         margin-left: 10px;
+                                                                     }
+                                                                     
+                                                                     .pack__arrow {
+                                                                         position: absolute;
+                                                                         bottom: -25px;
+                                                                         right: 20px;
+                                                                     }
+                                                                     
+                                                                     .arrow-left {
+                                                                         right: auto;
+                                                                         left: -10px;
+                                                                     }
+                                                                     
+                                                                     .text {}
+                                                                     
+                                                                     .small-text_color {}
+                                                                     
+                                                                     .arrow {}
+                                                                     
+                                                                     .video {}
+                                                                     
+                                                                     .pack__video {
+                                                                         bottom: -100px;
+                                                                         right: -520px;
+                                                                     }
+                                                                     
+                                                                     .pack__video-left {
+                                                                         left: -510px;
+                                                                         right: auto;
+                                                                     }
+                                                                     
+                                                                     .pack__image1 {
+                                                                         background: no-repeat center/cover url('/img/pack-img1.jpg');
+                                                                     }
+                                                                     
+                                                                     .pack__image2 {
+                                                                         background: no-repeat center/cover url('/img/pack-img2.jpg');
+                                                                     }
+                                                                     
+                                                                     .pack__image3 {
+                                                                         background: no-repeat center/cover url('/img/pack-img3.jpg');
+                                                                     }
+                                                                     
+                                                                     .item__left {}
+                                                                     
+                                                                     .arrow-left {}
+                                                                     
+                                                                     .cons {
+                                                                         display: flex;
+                                                                         justify-content: space-between;
+                                                                         align-items: center;
+                                                                         flex-wrap: wrap;
+                                                                     }
+                                                                     
+                                                                     .cons__left {
+                                                                         flex: 1 1 55%;
+                                                                         margin-bottom: 30px;
+                                                                         margin-right: 10px;
+                                                                     }
+                                                                     
+                                                                     .cons__header {
+                                                                         margin-bottom: 20px;
+                                                                     }
+                                                                     
+                                                                     .cons__right {
+                                                                         flex: 0 1 40%;
+                                                                         border: 2px solid var(--color1);
+                                                                         height: 680px;
+                                                                         display: flex;
+                                                                         flex-direction: column;
+                                                                         justify-content: space-between;
+                                                                         align-items: center;
+                                                                     }
+                                                                     
+                                                                     .form-header {}
+                                                                     
+                                                                     .cons__form {
+                                                                         display: flex;
+                                                                         flex-direction: column;
+                                                                         justify-content: space-between;
+                                                                         align-items: stretch;
+                                                                         height: 350px;
+                                                                     }
+                                                                     
+                                                                     .input {
+                                                                         border: none;
+                                                                         width: 100%;
+                                                                         height: 80px;
+                                                                         border-bottom: 2px solid var(--color1);
+                                                                         border-radius: 10px;
+                                                                         font-family: var(--font-family4), sans-serif;
+                                                                         font-size: 24px;
+                                                                         line-height: 36px;
+                                                                         text-align: center;
+                                                                         padding: 0 20px;
+                                                                     }
+                                                                     
+                                                                     .input:focus {
+                                                                         outline: none;
+                                                                         box-shadow: 0 0 15px var(--color1);
+                                                                     }
+                                                                     
+                                                                     .input::placeholder {
+                                                                         color: #747474;
+                                                                         font-family: var(--font-family4), sans-serif;
+                                                                         font-size: 24px;
+                                                                         line-height: 36px;
+                                                                         transition: all .5s ease;
+                                                                     }
+                                                                     
+                                                                     .form-desc {
+                                                                         display: block;
+                                                                         font-size: 20px;
+                                                                         line-height: 28px;
+                                                                     }
+                                                                     
+                                                                     .data {
+                                                                         border-bottom: 1px solid var(--color2);
+                                                                     }
+                                                                     
+                                                                     .face {}
+                                                                     
+                                                                     .face__header {}
+                                                                     
+                                                                     .face__body {}
+                                                                     
+                                                                     .face__list {
+                                                                         display: flex;
+                                                                         justify-content: space-between;
+                                                                         align-items: center;
+                                                                         flex-wrap: wrap;
+                                                                     }
+                                                                     
+                                                                     .face__item {
+                                                                         margin-top: 480px;
+                                                                         max-width: 530px;
+                                                                         min-height: 600px;
+                                                                         display: flex;
+                                                                         flex-direction: column;
+                                                                         position: relative;
+                                                                     }
+                                                                     
+                                                                     .face__box {
+                                                                         min-height: 550px;
+                                                                         display: flex;
+                                                                         flex-direction: column;
+                                                                     }
+                                                                     
+                                                                     .face__image {
+                                                                         position: absolute;
+                                                                         width: 450px;
+                                                                         height: 600px;
+                                                                         left: 26%;
+                                                                         bottom: 80%;
+                                                                         z-index: -1;
+                                                                         border-bottom: 2px solid var(--color1);
+                                                                         background: no-repeat top/cover url("/img/face1.jpg");
+                                                                     }
+                                                                     
+                                                                     .face__image-right {
+                                                                         left: auto;
+                                                                         right: 26%;
+                                                                         bottom: 80%;
+                                                                         background: no-repeat bottom/cover url("/img/face2.jpg");
+                                                                         border-right: 2px solid var(--color1);
+                                                                         border-left: 2px solid var(--color1);
+                                                                     }
+                                                                     
+                                                                     .face__picture {}
+                                                                     
+                                                                     .face__img {}
+                                                                     
+                                                                     .face__desc {}
+                                                                     
+                                                                     .item-heading {}
+                                                                     
+                                                                     .social {
+                                                                         order: 100;
+                                                                         margin-top: auto;
+                                                                     }
+                                                                     
+                                                                     .social__link:not(:last-child) {
+                                                                         margin-right: 30px;
+                                                                     }
+                                                                     
+                                                                     .social_color,
+                                                                     .what-color,
+                                                                     .inst-color {
+                                                                         transition: all .5s ease;
+                                                                     }
+                                                                     
+                                                                     .social_color:hover {
+                                                                         fill: #2a4ff3;
+                                                                     }
+                                                                     
+                                                                     .social_color:active {
+                                                                         fill: #1771F1;
+                                                                     }
+                                                                     
+                                                                     .what-color:hover {
+                                                                         fill: #048319;
+                                                                     }
+                                                                     
+                                                                     .inst-color:hover {
+                                                                         fill: #c70b3a;
+                                                                     }
+                                                                     
+                                                                     .document {}
+                                                                     
+                                                                     .document__header {}
+                                                                     
+                                                                     .document__img {
+                                                                         width: 370px;
+                                                                     }
+                                                                     
+                                                                     .document__body {
+                                                                         display: flex;
+                                                                         justify-content: space-around;
+                                                                         align-items: center;
+                                                                         flex-wrap: wrap;
+                                                                     }
+                                                                     
+                                                                     .ui-accordion .ui-accordion-header {
+                                                                         list-style-type: none;
+                                                                         font-family: var(--font-family4), sans-serif;
+                                                                         border: none;
+                                                                         color: #333;
+                                                                         border-bottom: 3px solid #cacaca;
+                                                                         border-top: 3px solid #cacaca;
+                                                                         background: transparent;
+                                                                         transition: all .5s ease;
+                                                                         border-radius: 0px;
+                                                                     }
+                                                                     
+                                                                     .ui-accordion .ui-accordion-header:not(:last-child) {
+                                                                         margin: 0 0 -3px 0 !important;
+                                                                     }
+                                                                     
+                                                                     .ui-accordion .ui-state-hover {
+                                                                         color: var(--color2);
+                                                                         border-color: var(--color2);
+                                                                         z-index: 10;
+                                                                     }
+                                                                     
+                                                                     .ui-icon {
+                                                                         display: none !important;
+                                                                     }
+                                                                     
+                                                                     .ui-accordion .ui-state-active {
+                                                                         color: var(--color1);
+                                                                         border-color: var(--color1);
+                                                                     }
+                                                                     
+                                                                     .ui-accordion .ui-accordion-content {
+                                                                         height: auto !important;
+                                                                     }
+                                                                     
+                                                                     .question__decor {
+                                                                         order: 1000;
+                                                                         margin-left: auto;
+                                                                         width: 60px;
+                                                                         height: 60px;
+                                                                     }
+                                                                     
+                                                                     .question__decor,
+                                                                     .question__decor_color,
+                                                                     .question__decor-plus_color {
+                                                                         transition: all .5s ease;
+                                                                     }
+                                                                     
+                                                                     .ui-state-hover .question__decor_color {
+                                                                         fill: #5199FF;
+                                                                     }
+                                                                     
+                                                                     .ui-state-hover .question__decor-plus_color {
+                                                                         fill: #fff;
+                                                                     }
+                                                                     
+                                                                     .ui-state-active .question__decor_color {
+                                                                         fill: #1771F1;
+                                                                     }
+                                                                     
+                                                                     .ui-state-active .question__decor-plus_color {
+                                                                         fill: #fff;
+                                                                     }
+                                                                     
+                                                                     .ui-state-active .question__decor {
+                                                                         transform: rotate(-45deg);
+                                                                     }
+                                                                     
+                                                                     .question__heading {
+                                                                         display: flex !important;
+                                                                         align-items: center !important;
+                                                                         height: 150px;
+                                                                     }
+                                                                     
+                                                                     .question__left {
+                                                                         display: inline-block;
+                                                                         font-size: 32px;
+                                                                         line-height: 1.2;
+                                                                         text-transform: uppercase;
+                                                                     }
+                                                                     
+                                                                     .document__img {}
+                                                                     
+                                                                     .question {}
+                                                                     
+                                                                     .question__header {}
+                                                                     
+                                                                     .question__body {
+                                                                         margin-bottom: 80px;
+                                                                     }
+                                                                     
+                                                                     #questBtn {
+                                                                         margin: 0 auto;
+                                                                     }
+                                                                     
+                                                                     .question__btn {}
+                                                                     
+                                                                     .footer {
+                                                                         width: 100%;
+                                                                         height: auto;
+                                                                         background-color: rgba(0, 0, 0, 1);
+                                                                     }
+                                                                     
+                                                                     .footer__container {
+                                                                         width: 100%;
+                                                                         height: 100%;
+                                                                         background: no-repeat center/cover url('/img/footer_background.png');
+                                                                     }
+                                                                     
+                                                                     .footer__body {
+                                                                         display: flex;
+                                                                         justify-content: space-between;
+                                                                         align-items: center;
+                                                                         flex-wrap: wrap;
+                                                                         color: var(--color3);
+                                                                     }
+                                                                     
+                                                                     .footer__header {
+                                                                         margin-bottom: 60px;
+                                                                     }
+                                                                     
+                                                                     .footer__item {
+                                                                         flex: 0 0 25%;
+                                                                         display: flex;
+                                                                         flex-direction: column;
+                                                                         min-height: 300px;
+                                                                     }
+                                                                     
+                                                                     .footer__subheading {
+                                                                         font-size: 36px;
+                                                                         line-height: 48px;
+                                                                         margin: 0 0 12px;
+                                                                     }
+                                                                     
+                                                                     .footer_link {
+                                                                         color: var(--color3);
+                                                                         transition: all .5s ease;
+                                                                         cursor: pointer;
+                                                                     }
+                                                                     
+                                                                     .footer_link:hover {
+                                                                         transform: translateY(-2px);
+                                                                     }
+                                                                     
+                                                                     .footer_link:active {
+                                                                         color: var(--color2);
+                                                                     }
+                                                                     
+                                                                     .footer__mail {
+                                                                         order: 2000;
+                                                                         margin-top: auto;
+                                                                     }
+                                                                     
+                                                                     .footer__list {}
+                                                                     
+                                                                     .footer__item {}
+                                                                     
+                                                                     .footer__link {}
+                                                                     
+                                                                     .footer__btn {}
+                                                                     
+                                                                     .footer__right {}
+                                                                     
+                                                                     .politic {
+                                                                         font-size: 18px;
+                                                                         display: block;
+                                                                         margin-top: 20px;
+                                                                         text-align: center;
+                                                                     }
+                                                                     
+                                                                     .politic:hover {
+                                                                         color: var(--color2);
+                                                                     }
+                                                                     
+                                                                     .parsad {
+                                                                         position: fixed;
+                                                                         left: 50%;
+                                                                         top: 20%;
+                                                                     }
+                                                                     
+                                                                     .parsada__putra {
+                                                                         position: relative;
+                                                                     }
+                                                                     
+                                                                     .popup {
+                                                                         position: fixed;
+                                                                         width: 100%;
+                                                                         height: 100%;
+                                                                         background-color: rgba(0, 0, 0, .8);
+                                                                         top: 0;
+                                                                         left: 0;
+                                                                         opacity: 0;
+                                                                         visibility: hidden;
+                                                                         overflow-y: auto;
+                                                                         overflow-x: hidden;
+                                                                         transition: all .8s ease;
+                                                                         padding: 100px;
+                                                                         z-index: 20000000000;
+                                                                     }
+                                                                     
+                                                                     .popup:target {
+                                                                         opacity: 1;
+                                                                         visibility: visible;
+                                                                     }
+                                                                     
+                                                                     .popup:target .form {
+                                                                         transform: perspective(600px) translate(0px, 0px) rotateX(0);
+                                                                         opacity: 1;
+                                                                     }
+                                                                     
+                                                                     .popup:target .menu {
+                                                                         opacity: 0;
+                                                                     }
+                                                                     
+                                                                     .popup__air {
+                                                                         position: relative;
+                                                                         width: 100%;
+                                                                         height: 100%;
+                                                                     }
+                                                                     
+                                                                     .popup__close {
+                                                                         position: absolute;
+                                                                         top: 10px;
+                                                                         right: 10px;
+                                                                         z-index: 3000;
+                                                                     }
+                                                                     
+                                                                     .close_color {
+                                                                         transition: all .3s ease;
+                                                                     }
+                                                                     
+                                                                     .popup__close:hover .close_color {
+                                                                         fill: #fff;
+                                                                     }
+                                                                     
+                                                                     .popup__area {
+                                                                         position: absolute;
+                                                                         width: 100%;
+                                                                         height: 150%;
+                                                                         top: 0;
+                                                                         left: 0;
+                                                                     }
+                                                                     
+                                                                     .popup__body {
+                                                                         min-height: 100%;
+                                                                         display: flex;
+                                                                         align-items: center;
+                                                                         justify-content: center;
+                                                                         padding: 30px 10px;
+                                                                     }
+                                                                     
+                                                                     .form {
+                                                                         transition: all .8s ease;
+                                                                         opacity: 0;
+                                                                         transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+                                                                     }
+                                                                     
+                                                                     .popup__close {
+                                                                         position: absolute;
+                                                                         right: 10px;
+                                                                         top: 10px;
+                                                                         font-size: 20px;
+                                                                         color: #000;
+                                                                         text-decoration: none;
+                                                                     }
+                                                                     
+                                                                     @media (max-width: 1500px) {
+                                                                         .menu {
+                                                                             left: 46.8%;
+                                                                         }
+                                                                         .pack__arrow {
+                                                                             bottom: -20px;
+                                                                         }
+                                                                         .more__list {
+                                                                             max-width: 100%;
+                                                                         }
+                                                                         .video {
+                                                                             position: relative !important;
+                                                                         }
+                                                                         .more__video {
+                                                                             display: none;
+                                                                         }
+                                                                         .more__body {
+                                                                             display: flex;
+                                                                             flex-direction: column;
+                                                                             align-items: center;
+                                                                         }
+                                                                         .more__low {
+                                                                             max-width: 600px;
+                                                                             display: inline-block;
+                                                                             flex: 1 1 auto;
+                                                                             margin-right: 30px;
+                                                                         }
+                                                                         .more__bottom {
+                                                                             display: flex;
+                                                                             justify-content: space-between;
+                                                                             align-items: stretch;
+                                                                             flex-wrap: wrap;
+                                                                         }
+                                                                         .more__description-img {
+                                                                             flex: 1 1 auto;
+                                                                             width: 400px;
+                                                                             min-height: 324px;
+                                                                             background: no-repeat left center/cover url('/img/more-img1.jpg')
+                                                                         }
+                                                                         .about__body {
+                                                                             display: flex;
+                                                                             justify-content: space-evenly;
+                                                                             align-items: stretch;
+                                                                             flex-wrap: wrap;
+                                                                         }
+                                                                         .about__box {
+                                                                             flex: 1 1 50%;
+                                                                         }
+                                                                         .about__video {
+                                                                             flex: 1 1 50%;
+                                                                             top: auto;
+                                                                             left: auto;
+                                                                             background: no-repeat left center/cover url(/img/about-img.jpg);
+                                                                             box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+                                                                             min-height: 396px;
+                                                                         }
+                                                                         .pack__video {
+                                                                             bottom: auto;
+                                                                             right: auto;
+                                                                             width: 100%;
+                                                                             box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+                                                                         }
+                                                                         .pack__video-left {
+                                                                             left: auto;
+                                                                             box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+                                                                         }
+                                                                         .item__body {
+                                                                             flex-direction: column-reverse;
+                                                                             flex: 0 0 100%;
+                                                                         }
+                                                                         .pack__box,
+                                                                         .pack__box-right {
+                                                                             padding-right: inherit;
+                                                                             padding-top: inherit;
+                                                                             padding-left: inherit;
+                                                                             padding: 40px 48px;
+                                                                             display: block;
+                                                                             width: 100%;
+                                                                         }
+                                                                         .item:not(:last-child) {
+                                                                             margin-bottom: 100px;
+                                                                         }
+                                                                         .item__body-left {
+                                                                             order: inherit;
+                                                                             margin-left: inherit;
+                                                                         }
+                                                                         .item {
+                                                                             justify-content: center;
+                                                                             width: 100%;
+                                                                         }
+                                                                         .pack__box {}
+                                                                     }
+                                                                     
+                                                                     @media (max-width:1230px) {
+                                                                         .more__low {
+                                                                             max-width: 100%;
+                                                                             margin-right: 0;
+                                                                             margin-bottom: 30px;
+                                                                         }
+                                                                         .more__description-img {
+                                                                             background: no-repeat left top/cover url('/img/more-img1.jpg')
+                                                                         }
+                                                                         .cons {
+                                                                             justify-content: center;
+                                                                         }
+                                                                         .face__item {
+                                                                             max-width: 400px;
+                                                                             min-height: 300px;
+                                                                             padding-top: 30px;
+                                                                             margin-top: 370px;
+                                                                         }
+                                                                         .face__image {
+                                                                             position: absolute;
+                                                                             width: 400px;
+                                                                             height: 400px;
+                                                                             left: 10%;
+                                                                             bottom: 84%;
+                                                                             background: no-repeat top/cover url(/img/face1.jpg);
+                                                                         }
+                                                                         .face__image-right {
+                                                                             left: auto;
+                                                                             right: 10%;
+                                                                             bottom: 84%;
+                                                                             background: no-repeat top/cover url(/img/face2.jpg);
+                                                                             border-left: 0px solid var(--color1);
+                                                                             border-right: 0px solid var(--color1);
+                                                                             border-bottom: 2px solid var(--color1);
+                                                                         }
+                                                                         .face__list {
+                                                                             align-items: stretch;
+                                                                             justify-content: space-evenly;
+                                                                         }
+                                                                         .face__box {
+                                                                             min-height: 400px;
+                                                                         }
+                                                                         .document__header {
+                                                                             margin-bottom: 50px;
+                                                                         }
+                                                                         .document__photo:not(:last-child) {
+                                                                             margin-bottom: 20px;
+                                                                         }
+                                                                     }
+                                                                     
+                                                                     @media (max-width: 1024px) {
+                                                                         .header {
+                                                                             margin-bottom: 40px;
+                                                                             display: flex;
+                                                                             justify-content: center;
+                                                                         }
+                                                                         .nav {
+                                                                             top: -73px;
+                                                                             left: -416px;
+                                                                         }
+                                                                         .nav__item {
+                                                                             border-radius: 5px;
+                                                                             margin-bottom: 2px;
+                                                                             width: 400px !important;
+                                                                         }
+                                                                         .nav__link {
+                                                                             font-size: 20px;
+                                                                             line-height: 1.1;
+                                                                             padding: 10px 30px;
+                                                                         }
+                                                                         .menu__icon__rect1,
+                                                                         .menu__icon__rect2,
+                                                                         .menu__icon__rect3 {
+                                                                             height: 7px;
+                                                                         }
+                                                                         .heading {
+                                                                             margin-bottom: 40px;
+                                                                         }
+                                                                         .order__contant {
+                                                                             max-width: 670px;
+                                                                             margin: 0px auto;
+                                                                         }
+                                                                         .order__desc {
+                                                                             font-size: 22px;
+                                                                             line-height: 32px;
+                                                                             margin-bottom: 50px;
+                                                                             margin-left: 30px;
+                                                                         }
+                                                                         .order_text {
+                                                                             text-align: center;
+                                                                             margin-left: 30px;
+                                                                             max-width: 600px;
+                                                                         }
+                                                                         .video {
+                                                                             height: 300px;
+                                                                         }
+                                                                         .text_indent {
+                                                                             margin-bottom: 30px;
+                                                                         }
+                                                                         .btn {
+                                                                             font-size: 24px;
+                                                                             line-height: 32px;
+                                                                             width: 300px;
+                                                                             height: 80px;
+                                                                         }
+                                                                         .order__body {
+                                                                             padding-top: 20px;
+                                                                             padding-bottom: 50px;
+                                                                         }
+                                                                         .section-indent {
+                                                                             padding: 50px 0;
+                                                                         }
+                                                                         .box {
+                                                                             padding: 20px 36px;
+                                                                         }
+                                                                         .description-heading {
+                                                                             font-size: 28px;
+                                                                             line-height: 32px;
+                                                                             margin-bottom: 10px;
+                                                                         }
+                                                                         .text {
+                                                                             font-size: 20px;
+                                                                             line-height: 28px;
+                                                                         }
+                                                                         .more__description:not(:last-child) {
+                                                                             margin-bottom: 24px;
+                                                                         }
+                                                                         .more__list {
+                                                                             max-width: 530px;
+                                                                             min-height: 600px;
+                                                                         }
+                                                                         /* .video {
+        max-width: 430px;
+        height: 300px;
+        border: 2px solid var(--color1);
+    } */
+                                                                         .more__video {
+                                                                             top: 70%;
+                                                                             left: 94%;
+                                                                         }
+                                                                         .step__item {
+                                                                             max-width: 700px;
+                                                                             font-size: 20px;
+                                                                             line-height: 32px;
+                                                                         }
+                                                                         .item-left {
+                                                                             position: absolute;
+                                                                             top: 15%;
+                                                                             bottom: 15%;
+                                                                             left: -62px;
+                                                                             width: 40px;
+                                                                             height: 40px;
+                                                                             border-radius: 50%;
+                                                                             background-color: var(--color1);
+                                                                             color: var(--color3);
+                                                                             display: flex;
+                                                                             justify-content: center;
+                                                                             align-items: center;
+                                                                             font-size: 20px;
+                                                                             line-height: 24px;
+                                                                         }
+                                                                         .item-last {
+                                                                             top: 50%;
+                                                                             bottom: 0%;
+                                                                         }
+                                                                         .step__list {
+                                                                             margin-bottom: 50px;
+                                                                             min-height: 500px;
+                                                                         }
+                                                                         .item-first {
+                                                                             top: 0%;
+                                                                             bottom: 50%;
+                                                                         }
+                                                                         .step__text {
+                                                                             margin-left: -40px;
+                                                                         }
+                                                                         .about__list {
+                                                                             max-width: 100%;
+                                                                             flex-direction: row;
+                                                                             height: 250px;
+                                                                             padding-right: 0px !important;
+                                                                             padding-bottom: 0px !important;
+                                                                         }
+                                                                         .item__heading {
+                                                                             font-size: 24px;
+                                                                             line-height: 1.2;
+                                                                         }
+                                                                         .point {
+                                                                             font-weight: bold;
+                                                                             font-size: 18px;
+                                                                             line-height: 1.2;
+                                                                         }
+                                                                         .doing {
+                                                                             font-size: 18px;
+                                                                             line-height: 1.2;
+                                                                             max-width: 200px;
+                                                                         }
+                                                                         .about {
+                                                                             margin-bottom: 30px;
+                                                                         }
+                                                                         .about__text {
+                                                                             position: relative;
+                                                                             display: inline-block;
+                                                                             bottom: auto;
+                                                                             left: auto;
+                                                                         }
+                                                                         .about__arrow {
+                                                                             position: absolute;
+                                                                             right: -20px;
+                                                                             bottom: -20px;
+                                                                         }
+                                                                         .about__box {
+                                                                             display: flex;
+                                                                             align-items: center;
+                                                                             width: 500px;
+                                                                             padding-bottom: 40px;
+                                                                             padding-right: 50px;
+                                                                         }
+                                                                         .pack__box,
+                                                                         .pack__box-right {
+                                                                             min-height: 300px;
+                                                                         }
+                                                                         .pack__box-right {
+                                                                             padding-left: 50px;
+                                                                         }
+                                                                         .pack__arrow {
+                                                                             bottom: -10px;
+                                                                             right: 60px;
+                                                                         }
+                                                                         .item__bottom {
+                                                                             font-size: 16px !important;
+                                                                         }
+                                                                         .item:not(:last-child) {
+                                                                             margin-bottom: 120px;
+                                                                         }
+                                                                         .face__list {
+                                                                             justify-content: space-between;
+                                                                         }
+                                                                         .face__item {
+                                                                             display: flex;
+                                                                             flex-direction: column-reverse;
+                                                                             margin-top: 30px;
+                                                                         }
+                                                                         .face__image {
+                                                                             position: relative;
+                                                                             left: auto;
+                                                                             bottom: auto;
+                                                                             right: auto;
+                                                                         }
+                                                                         .cons {
+                                                                             margin-top: 40px;
+                                                                         }
+                                                                         .cons__header {
+                                                                             max-width: 400px;
+                                                                             margin-bottom: 10px;
+                                                                         }
+                                                                         .cons__right {
+                                                                             border: 2px solid var(--color1);
+                                                                             height: 430px;
+                                                                         }
+                                                                         .cons__form {
+                                                                             display: flex;
+                                                                             flex-direction: column;
+                                                                             justify-content: space-between;
+                                                                             align-items: stretch;
+                                                                             height: 230px;
+                                                                         }
+                                                                         .input {
+                                                                             height: 60px;
+                                                                             border-bottom: 2px solid var(--color1);
+                                                                             font-size: 18px;
+                                                                             line-height: 1.2;
+                                                                             padding: 0 10px;
+                                                                         }
+                                                                         .input::placeholder {
+                                                                             font-size: 18px;
+                                                                             line-height: 1.2;
+                                                                         }
+                                                                         .form-desc {
+                                                                             display: block;
+                                                                             font-size: 16px;
+                                                                             line-height: 1.2;
+                                                                             text-align: center;
+                                                                         }
+                                                                         .form__btn {
+                                                                             height: 60px;
+                                                                             border-radius: 10px;
+                                                                             font-size: 18px;
+                                                                             line-height: 1.2;
+                                                                         }
+                                                                         .question__heading {
+                                                                             height: auto;
+                                                                             min-height: 80px;
+                                                                         }
+                                                                         .question__decor {
+                                                                             order: 1000;
+                                                                             margin-left: auto;
+                                                                             width: 30px;
+                                                                             height: 30px;
+                                                                         }
+                                                                         .question__left {
+                                                                             display: inline-block;
+                                                                             font-size: 24px;
+                                                                             line-height: 1.2;
+                                                                             text-transform: uppercase;
+                                                                             padding-right: 30px;
+                                                                         }
+                                                                         .ui-accordion .ui-accordion-header {
+                                                                             border-bottom: 1px solid #cacaca;
+                                                                             border-top: 1px solid #cacaca;
+                                                                             padding: 10px 0 !important;
+                                                                         }
+                                                                         .ui-accordion .ui-accordion-header:not(:last-child) {
+                                                                             margin: 0 0 -1px 0 !important;
+                                                                         }
+                                                                         .ui-accordion .ui-state-active {
+                                                                             color: var(--color2);
+                                                                             border-color: var(--color2);
+                                                                         }
+                                                                         .ui-state-active .question__decor_color {
+                                                                             fill: #5199FF;
+                                                                         }
+                                                                         .question__body {
+                                                                             margin-bottom: 40px;
+                                                                         }
+                                                                         .menu {
+                                                                             left: auto;
+                                                                             right: 52px;
+                                                                             top: 10px;
+                                                                         }
+                                                                         .menu:hover .nav {
+                                                                             transform: translateY(0);
+                                                                         }
+                                                                         .footer__item {
+                                                                             min-height: 260px;
+                                                                         }
+                                                                         .popup {
+                                                                             padding: 20px;
+                                                                         }
+                                                                         .form__title {
+                                                                             font-size: 32px !important;
+                                                                             margin: 0px 0px 10px 0px !important;
+                                                                         }
+                                                                         .form__subtittle {
+                                                                             font-size: 16px !important;
+                                                                             margin: 0px 0px 20px 0px !important;
+                                                                         }
+                                                                         .form__label {
+                                                                             font-size: 16px !important;
+                                                                             margin: 0px 0px 5px 0px !important;
+                                                                         }
+                                                                         .form__item {
+                                                                             margin: 0px 0px 10px 0px !important;
+                                                                         }
+                                                                         .options {
+                                                                             padding: 0px !important;
+                                                                         }
+                                                                         .checkbox__label {
+                                                                             font-size: 12px;
+                                                                             line-height: 140%;
+                                                                             width: 100%;
+                                                                         }
+                                                                         .back {
+                                                                             position: absolute;
+                                                                             bottom: 0;
+                                                                             right: 0;
+                                                                             width: 100%;
+                                                                             height: 100%;
+                                                                             opacity: .4;
+                                                                             background: no-repeat bottom right -300px/cover url(/img/order-back.png);
+                                                                             z-index: -1;
+                                                                         }
+                                                                         .back_color {
+                                                                             display: none;
+                                                                             width: 100%;
+                                                                             height: 100%;
+                                                                             background-color: rgba(0, 0, 0, .7);
+                                                                         }
+                                                                         .order__header {
+                                                                             text-align: center;
+                                                                         }
+                                                                         .btn_position {
+                                                                             margin-left: auto;
+                                                                             margin-right: auto;
+                                                                         }
+                                                                     }
+                                                                     
+                                                                     @media (max-width: 768px) {
+                                                                         .about__box {
+                                                                             width: auto;
+                                                                             max-width: 500px;
+                                                                         }
+                                                                         .menu {
+                                                                             left: auto;
+                                                                             right: 2%;
+                                                                             top: 16px;
+                                                                         }
+                                                                         .header {
+                                                                             margin-bottom: 30px;
+                                                                             justify-content: center;
+                                                                         }
+                                                                         .logo {
+                                                                             margin: 0;
+                                                                             width: 150px;
+                                                                             height: 50px;
+                                                                         }
+                                                                         .heading {
+                                                                             font-size: 32px;
+                                                                             margin-bottom: 30px !important;
+                                                                             margin-bottom: 20px;
+                                                                             margin-left: auto;
+                                                                             margin-right: auto;
+                                                                             text-align: center;
+                                                                         }
+                                                                         .heading_underline {
+                                                                             display: inline-block;
+                                                                             padding-bottom: 10px;
+                                                                             border-bottom: 2px solid var(--color1);
+                                                                         }
+                                                                         .order__desc {
+                                                                             font-size: 20px;
+                                                                             line-height: 1.2;
+                                                                             margin-bottom: 30px;
+                                                                             margin-left: 30px;
+                                                                         }
+                                                                         .order_text {
+                                                                             font-size: 16px !important;
+                                                                             line-height: 20px;
+                                                                             max-width: 400px;
+                                                                             margin-left: auto;
+                                                                             margin-right: auto;
+                                                                         }
+                                                                         .text {
+                                                                             font-size: 18px;
+                                                                             line-height: 1.4;
+                                                                         }
+                                                                         .btn {
+                                                                             font-size: 20px;
+                                                                             line-height: 32px;
+                                                                             width: 250px;
+                                                                             height: 60px;
+                                                                         }
+                                                                         .text_indent {
+                                                                             margin-bottom: 20px;
+                                                                         }
+                                                                         .more {
+                                                                             display: flex;
+                                                                             flex-direction: column;
+                                                                             align-items: center;
+                                                                             padding-bottom: 0 !important;
+                                                                         }
+                                                                         .description-heading {
+                                                                             font-size: 24px;
+                                                                             line-height: 1.2;
+                                                                             margin-bottom: 10px;
+                                                                         }
+                                                                         .more__list {
+                                                                             width: 100%;
+                                                                             margin-bottom: 50px;
+                                                                         }
+                                                                         .arrow {
+                                                                             transform: rotate( 90deg);
+                                                                         }
+                                                                         /* .video {
+        max-width: 629px;
+        height: 400px;
+        border: 2px solid var(--color1);
+        position: relative;
+        top: auto;
+        bottom: auto;
+        right: auto;
+        left: auto;
+    } */
+                                                                         .more__body {
+                                                                             display: flex;
+                                                                             flex-direction: column;
+                                                                             align-items: center;
+                                                                             padding: 0 20px;
+                                                                         }
+                                                                         .nav {
+                                                                             top: -68px;
+                                                                             left: -390px;
+                                                                             ;
+                                                                             min-height: 250px;
+                                                                         }
+                                                                         .nav__link {
+                                                                             font-size: 16px;
+                                                                             line-height: 32px;
+                                                                             padding: 0px 10px;
+                                                                         }
+                                                                         .nav__item {
+                                                                             margin-bottom: 1px;
+                                                                             width: 280px !important;
+                                                                         }
+                                                                         .menu__icon {
+                                                                             height: 50px;
+                                                                         }
+                                                                         .step {
+                                                                             display: flex;
+                                                                             flex-direction: column;
+                                                                             align-items: center;
+                                                                         }
+                                                                         .step__body {
+                                                                             margin-left: 50px;
+                                                                         }
+                                                                         .step__item:not(:last-child) {
+                                                                             margin-bottom: 20px;
+                                                                         }
+                                                                         .item-last {
+                                                                             top: 58%;
+                                                                             bottom: 0%;
+                                                                         }
+                                                                         .step__header {
+                                                                             margin-bottom: 40px !important;
+                                                                         }
+                                                                         .about {
+                                                                             display: flex;
+                                                                             flex-direction: column;
+                                                                             align-items: center;
+                                                                         }
+                                                                         .about__body {
+                                                                             display: flex;
+                                                                             flex-direction: column-reverse;
+                                                                             align-items: center;
+                                                                         }
+                                                                         .about__video {
+                                                                             width: 100%;
+                                                                             min-height: 250px;
+                                                                         }
+                                                                         .about__header {
+                                                                             margin-bottom: 40px !important;
+                                                                         }
+                                                                         .about__list {
+                                                                             width: 100%;
+                                                                             height: auto;
+                                                                             padding: 0 !important;
+                                                                             justify-content: space-evenly;
+                                                                             flex-direction: row;
+                                                                             margin-bottom: 20px;
+                                                                         }
+                                                                         .about__content:not(:last-child) {
+                                                                             margin-bottom: 30px;
+                                                                         }
+                                                                         .about__text {
+                                                                             position: relative;
+                                                                             bottom: auto;
+                                                                             left: auto;
+                                                                             top: auto;
+                                                                             margin-left: 30px;
+                                                                         }
+                                                                         .about__arrow {
+                                                                             right: -70px;
+                                                                             bottom: -0px;
+                                                                         }
+                                                                         .show {
+                                                                             position: relative;
+                                                                         }
+                                                                         .more__arrow {
+                                                                             position: absolute;
+                                                                             right: 0;
+                                                                             top: 20px;
+                                                                         }
+                                                                         .pack {
+                                                                             display: flex;
+                                                                             flex-direction: column;
+                                                                             align-items: center;
+                                                                             margin: 0;
+                                                                         }
+                                                                         .item__bottom {
+                                                                             text-align: center;
+                                                                             display: inline-block;
+                                                                             position: relative;
+                                                                         }
+                                                                         .item__bottom-right {
+                                                                             text-align: center;
+                                                                             margin-left: 0;
+                                                                         }
+                                                                         .pack__arrow {
+                                                                             height: 30px;
+                                                                             width: 30px;
+                                                                             position: absolute;
+                                                                             top: -2px;
+                                                                             right: -5px;
+                                                                         }
+                                                                         .box {
+                                                                             margin-bottom: 50px;
+                                                                             padding: 32px 40px;
+                                                                         }
+                                                                         .item:not(:last-child) {
+                                                                             margin-bottom: 70px;
+                                                                         }
+                                                                         .arrow-left {
+                                                                             transform: rotate(90deg);
+                                                                             margin: 0;
+                                                                             left: auto;
+                                                                         }
+                                                                         .cons {
+                                                                             margin: 0;
+                                                                             flex-direction: column;
+                                                                             flex: 0 0 auto;
+                                                                         }
+                                                                         .cons__left {
+                                                                             display: flex;
+                                                                             flex-direction: column;
+                                                                             align-items: center;
+                                                                             margin-bottom: 50px;
+                                                                         }
+                                                                         .cons__header {
+                                                                             max-width: 100%;
+                                                                             margin-bottom: 5px !important;
+                                                                         }
+                                                                         .cons__text {
+                                                                             text-align: center;
+                                                                         }
+                                                                         .cons__right {
+                                                                             display: block;
+                                                                             max-width: 400px;
+                                                                             padding-top: 30px;
+                                                                             margin: 0;
+                                                                         }
+                                                                         .form-header {
+                                                                             text-align: center;
+                                                                             margin-bottom: 20px;
+                                                                         }
+                                                                         .cons__form {
+                                                                             width: 100%;
+                                                                             height: 220px;
+                                                                             margin-bottom: 20px;
+                                                                             align-items: center;
+                                                                         }
+                                                                         .form-desc {
+                                                                             font-size: 12px;
+                                                                             line-height: 1.55;
+                                                                         }
+                                                                         .form__btn {
+                                                                             width: 100%;
+                                                                         }
+                                                                         .face {
+                                                                             display: flex;
+                                                                             flex-direction: column;
+                                                                             align-items: center;
+                                                                             padding-bottom: 0;
+                                                                         }
+                                                                         .face__header {}
+                                                                         .face__list {
+                                                                             display: flex;
+                                                                             flex-direction: column;
+                                                                             align-items: center;
+                                                                         }
+                                                                         .face__item {
+                                                                             max-width: 530px;
+                                                                             min-height: 300px;
+                                                                             padding-top: 0px;
+                                                                             margin-top: 0px;
+                                                                             display: flex;
+                                                                             flex-direction: column-reverse;
+                                                                             align-items: center;
+                                                                         }
+                                                                         .face__item p {
+                                                                             margin: 3px;
+                                                                         }
+                                                                         .face__image {
+                                                                             position: relative;
+                                                                             left: auto;
+                                                                             bottom: -15px;
+                                                                             width: 312px;
+                                                                             height: 427px;
+                                                                         }
+                                                                         .face__box {
+                                                                             max-width: 430px;
+                                                                         }
+                                                                         .face__image-right {
+                                                                             position: relative;
+                                                                             right: auto;
+                                                                             border-left: 2px solid var(--color1);
+                                                                             border-right: 2px solid var(--color1);
+                                                                         }
+                                                                         .face__box:last-child {
+                                                                             margin-bottom: 0 !important;
+                                                                         }
+                                                                         .document {
+                                                                             display: flex;
+                                                                             flex-direction: column;
+                                                                             align-items: center;
+                                                                         }
+                                                                         .document__img {
+                                                                             width: 340px;
+                                                                         }
+                                                                         .document__photo:not(:last-child) {
+                                                                             margin-bottom: 20px;
+                                                                         }
+                                                                         .question {
+                                                                             display: flex;
+                                                                             flex-direction: column;
+                                                                             align-items: center;
+                                                                         }
+                                                                         .question__heading {
+                                                                             position: relative;
+                                                                         }
+                                                                         .question__decor {
+                                                                             position: absolute;
+                                                                             right: 0;
+                                                                         }
+                                                                         .footer__item {
+                                                                             flex: 0 0 35%;
+                                                                             min-height: 200px;
+                                                                         }
+                                                                         .politic,
+                                                                         .footer__order {
+                                                                             font-size: 12px;
+                                                                         }
+                                                                     }
+                                                                     
+                                                                     @media (max-width: 500px) {
+                                                                         .logo {
+                                                                             width: 123px;
+                                                                             height: 39px;
+                                                                         }
+                                                                         .header {
+                                                                             margin-bottom: 10px;
+                                                                         }
+                                                                         .nav__item {
+                                                                             width: 226px !important;
+                                                                         }
+                                                                         .heading {
+                                                                             font-size: 28px;
+                                                                             margin-bottom: 20px !important;
+                                                                         }
+                                                                         .order__header {
+                                                                             margin-bottom: 30px !important;
+                                                                         }
+                                                                         .section-position {
+                                                                             padding-left: 15px !important;
+                                                                             padding-right: 15px !important;
+                                                                         }
+                                                                         .order__desc {
+                                                                             font-size: 18px;
+                                                                             line-height: 1.2;
+                                                                             margin-bottom: 30px;
+                                                                             margin-left: 20px;
+                                                                         }
+                                                                         .section-indent {
+                                                                             padding: 30px 0;
+                                                                         }
+                                                                         .box {
+                                                                             margin-bottom: 20px;
+                                                                             padding: 15px 15px;
+                                                                             border-radius: 5px;
+                                                                         }
+                                                                         .more__list {
+                                                                             max-width: 300px;
+                                                                         }
+                                                                         .arrow {
+                                                                             width: 30px;
+                                                                             height: 10px;
+                                                                         }
+                                                                         .more__arrow {
+                                                                             right: -8px;
+                                                                             top: 38px;
+                                                                         }
+                                                                         .ui-accordion .ui-accordion-content {
+                                                                             width: 290px;
+                                                                             padding-top: 10px;
+                                                                             padding-right: 20px !important;
+                                                                             padding-bottom: 10px;
+                                                                             padding-left: 20px !important;
+                                                                             margin-right: auto;
+                                                                             margin-left: auto;
+                                                                         }
+                                                                     }

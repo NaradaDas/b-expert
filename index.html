@@ -2,35 +2,43 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Снижение кадастровой стоимости</title>
-    <base target="_blank">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300;500&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/select.css">
-    <link rel="stylesheet" href="css/style-form.css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Снижение кадастровой стоимости</title>
+  <!-- <base target="_blank"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300;500&family=Noto+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/select.css">
+  <link rel="stylesheet" href="css/style-form.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
+  <script defer src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- <script defer src="./js/menu.js"></script> -->
+  <script defer src="./js/accordion.js"></script>
+  <script defer src="./js/first-form.js"></script>
+  <script defer src="./js/script.js"></script>
+  <script defer src="./js/phone.js"></script>
+  <script defer src="./js/jquery.inputmask.min.js"></script>
+  <script defer src="./js/link.js"></script>
+  <script defer src="./js/lastPhone.js"></script>
 
 
 </head>
 
 <body>
 
-    <div class="main" id="order">
-        <!-- <div class="parsada__putra">
+  <div class="main" id="order">
+    <!-- <div class="parsada__putra">
       <a href="#parsad" class="menu__close"></a>
       <ul class="nav" id="nav">
         <li class="nav__item" id="nav__item" data-end="zero" data-start="zero"><a href="#order "
@@ -61,22 +69,22 @@
         </li>
       </ul>
     </div> -->
-        <div class="order">
-            <div class="back">
-                <div class="back_color"></div>
-            </div>
-            <div class="order__body section-position">
-                <div class="header">
-                    <div class="logo">
-                        <a target="_blank" href="https://b-expert.pro/" class="logo__link">
-                            <picture>
-                                <!-- <source srcset="img/logox1024.png" media="(max-width: 1024px)" class="logo__img"> -->
-                                <img src="img/logo.png" alt="" class="logo__img">
-                            </picture>
+    <div class="order">
+      <div class="back">
+        <div class="back_color"></div>
+      </div>
+      <div class="order__body section-position">
+        <div class="header">
+          <div class="logo">
+            <a target="_blank" href="https://b-expert.pro/" class="logo__link">
+              <picture>
+                <!-- <source srcset="img/logox1024.png" media="(max-width: 1024px)" class="logo__img"> -->
+                <img src="img/logo.png" alt="" class="logo__img">
+              </picture>
 
-                        </a>
-                    </div>
-                    <!-- <div class="menu" id="menu">
+            </a>
+          </div>
+          <!-- <div class="menu" id="menu">
                         <a href="#nav" class="menu__link">
                             <svg class="menu__icon" id="menu__icon" width="50" height="30" viewBox="0 0 50 35" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect class="menu__icon__rect1" width="50" height="5" fill="rgb(33, 30, 185)" />
@@ -87,50 +95,59 @@
 
                     </div> -->
 
-                </div>
-
-                <h1 class="order__header heading">Снижение кадастровой стоимости <br> <span class="text_color">снизим налог на
-            имущество</span> </h1>
-                <div class="order__contant">
-                    <p class="order__desc">
-                        <span class="order__desc_color">ВНИМАНИЕ!</span> С 2022 года снижение кадастровой стоимости будет затрагивать только текущий период. Поскольку правительство Иркутской области вносит поправки. То есть в 2022 компенсацию за прошлый
-                        период вы получить не смежете! Успевайте в этом году, обращайтесь прямо сейчас.
-                    </p>
-                    <p class="text text_indent order_text">Оставьте заявку на <a href="#cons" class="cons-link small-text_color">бесплатный расчет</a> и узнайте выгоду от снижения кадастровой стоимости</p>
-
-                </div>
-            </div>
         </div>
-        <a href="#popup" class="btn order__btn btn_position" id="btn">Оставить заявку</a>
-        <div id="more" class="more section-position section-indent">
-            <h2 class="more__header heading heading_underline">Подробнее <span class="text_color">про услугу</span></h2>
-            <div class="more__body">
-                <ul class="more__list box">
-                    <li class="more__description">
-                        <h3 class="description-heading">Как оказывается услуга?</h3>
-                        <p class="text">В начале делаем предварительный расчет. Становится понятно: какую минимальную выгоду вы получите. Потом необходимо сделать осмотр, подготовить отчет, подготовить и подать исковое заявление в суд и ждать рассмотрения заявления.
-                            Ориентировочно вся прцедура занимает 3-4 месяца. Поэтому успевайте и обращайтесь уже сейчас.
-                        </p>
-                    </li>
-                    <li class="more__description ">
 
-                        <h3 class="description-heading">Какие есть нюансы в законодательстве?</h3>
-                        <div class="more__bottom">
-                            <p class="text more__text more__low">С 2023 года в РФ будет изменен порядок снижения кадастровой стоимости. Однако в Иркутской области эти поправки вступят в силу с 1 января 2022г. Государство всегда заинтересовано в увеличении налоговой базы, поэтому эту поправку
-                                в законе оно не афиширует. Ведь после этого вернуть деньги за неправильно рассчитанный налог вы не сможете.
-                            </p>
+        <h1 class="order__header heading">Снижение кадастровой стоимости <br> <span class="text_color">снизим налог на
+            имущество</span> </h1>
+        <div class="order__contant">
+          <p class="order__desc">
+            <span class="order__desc_color">ВНИМАНИЕ!</span> С 2022 года снижение кадастровой стоимости будет
+            затрагивать только текущий период. Поскольку правительство Иркутской области вносит поправки. То есть в 2022
+            компенсацию за прошлый
+            период вы получить не смежете! Успевайте в этом году, обращайтесь прямо сейчас.
+          </p>
+          <p class="text text_indent order_text">Оставьте заявку на <a href="#cons"
+              class="cons-link small-text_color">бесплатный расчет</a> и узнайте выгоду от снижения кадастровой
+            стоимости</p>
+
+        </div>
+      </div>
+    </div>
+    <a href="#popup" class="btn order__btn btn_position" id="btn">Оставить заявку</a>
+    <div id="more" class="more section-position section-indent">
+      <h2 class="more__header heading heading_underline">Подробнее <span class="text_color">про услугу</span></h2>
+      <div class="more__body">
+        <ul class="more__list box">
+          <li class="more__description">
+            <h3 class="description-heading">Как оказывается услуга?</h3>
+            <p class="text">В начале делаем предварительный расчет. Становится понятно: какую минимальную выгоду вы
+              получите. Потом необходимо сделать осмотр, подготовить отчет, подготовить и подать исковое заявление в суд
+              и ждать рассмотрения заявления.
+              Ориентировочно вся прцедура занимает 3-4 месяца. Поэтому успевайте и обращайтесь уже сейчас.
+            </p>
+          </li>
+          <li class="more__description ">
+
+            <h3 class="description-heading">Какие есть нюансы в законодательстве?</h3>
+            <div class="more__bottom">
+              <p class="text more__text more__low">С 2023 года в РФ будет изменен порядок снижения кадастровой
+                стоимости. Однако в Иркутской области эти поправки вступят в силу с 1 января 2022г. Государство всегда
+                заинтересовано в увеличении налоговой базы, поэтому эту поправку
+                в законе оно не афиширует. Ведь после этого вернуть деньги за неправильно рассчитанный налог вы не
+                сможете.
+              </p>
 
 
-                            <div class="more__description-img"></div>
+              <div class="more__description-img"></div>
 
 
 
-                        </div>
+            </div>
 
 
 
-                    </li>
-                    <!-- <p class="text more__low show">Поcмотрите <span class="small-text_color">короткое видео</span>, чтобы было понятнее
+          </li>
+          <!-- <p class="text more__low show">Поcмотрите <span class="small-text_color">короткое видео</span>, чтобы было понятнее
                         <svg class="arrow more__arrow" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M50.7071 8.70711C51.0976 8.31658 51.0976 7.68342 50.7071 7.29289L44.3431 0.928932C43.9526 0.538408 43.3195 0.538408 42.9289 0.928932C42.5384 1.31946 42.5384 1.95262 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM0 9H50V7H0V9Z"
@@ -138,430 +155,450 @@
             </svg>
                     </p> -->
 
-                </ul>
+        </ul>
 
-                <div class="video more__video"></div>
-                <!-- <iframe class="video more__video" width="560" height="315" src="https://www.youtube.com/embed/1lmdaCdujhg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        <div class="video more__video"></div>
+        <!-- <iframe class="video more__video" width="560" height="315" src="https://www.youtube.com/embed/1lmdaCdujhg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
-            </div>
+      </div>
 
-        </div>
-        <a href="#popup" class="btn more__btn btn_position">Оставить заявку</a>
-        <div id="step" class="step section-position section-indent">
-            <h2 class="step__header heading heading_underline"><span class="text_color">Этапы решения</span> вашей проблемы
-            </h2>
-            <div class="step__body">
-                <ul class="step__list">
-                    <li class="step__item">
-                        <div class="item-left item-first">1</div>
+    </div>
+    <a href="#popup" class="btn more__btn btn_position">Оставить заявку</a>
+    <div id="step" class="step section-position section-indent">
+      <h2 class="step__header heading heading_underline"><span class="text_color">Этапы решения</span> вашей проблемы
+      </h2>
+      <div class="step__body">
+        <ul class="step__list">
+          <li class="step__item">
+            <div class="item-left item-first">1</div>
 
-                        Вы оставляете заявку на сайте или звоните нам
-                    </li>
-                    <li class="step__item">
-                        <div class="item-left item-second">2</div>
+            Вы оставляете заявку на сайте или звоните нам
+          </li>
+          <li class="step__item">
+            <div class="item-left item-second">2</div>
 
-                        Сообщаете нашим специалистам кадастровый номер и мы бесплатно рассчитываем примерную выгоду от снижения кадастровой стоимости
-                    </li>
-                    <li class="step__item">
-                        <div class="item-left">3</div>
+            Сообщаете нашим специалистам кадастровый номер и мы бесплатно рассчитываем примерную выгоду от снижения
+            кадастровой стоимости
+          </li>
+          <li class="step__item">
+            <div class="item-left">3</div>
 
-                        Заключаете с нами договор и вносите предоплату
-                    </li>
-                    <li class="step__item">
-                        <div class="item-left">4</div>
+            Заключаете с нами договор и вносите предоплату
+          </li>
+          <li class="step__item">
+            <div class="item-left">4</div>
 
-                        Провидится осмотр. Предоставляете нам все необходимые документы (консультирует специалист)
-                    </li>
-                    <li class="step__item">
-                        <div class="item-left item-fifth">5</div>
+            Провидится осмотр. Предоставляете нам все необходимые документы (консультирует специалист)
+          </li>
+          <li class="step__item">
+            <div class="item-left item-fifth">5</div>
 
-                        Подготавливается отчет об оценке
-                    </li>
-                    <li class="step__item">
-                        <div class="item-left">6</div>
+            Подготавливается отчет об оценке
+          </li>
+          <li class="step__item">
+            <div class="item-left">6</div>
 
-                        Готовится и подается исковое заявление в суд
-                    </li>
-                    <li class="step__item">
-                        <div class="item-left item-last">7</div>
+            Готовится и подается исковое заявление в суд
+          </li>
+          <li class="step__item">
+            <div class="item-left item-last">7</div>
 
-                        Положительное решение суда и уменьшение вашего налога
-                    </li>
+            Положительное решение суда и уменьшение вашего налога
+          </li>
 
 
 
-                </ul>
-                <p class="text step__text">У нашей компании есть <span class="small-text_color">положительной опыт</span> рассмотрения судебных дел без привлечения судебного эксперта, что существенно экономит <span class="small-text_color">ваши
+        </ul>
+        <p class="text step__text">У нашей компании есть <span class="small-text_color">положительной опыт</span>
+          рассмотрения судебных дел без привлечения судебного эксперта, что существенно экономит <span
+            class="small-text_color">ваши
             издержки</span>.</p>
-            </div>
+      </div>
 
-        </div>
-        <a href="#popup" class="btn btn_position">Оставить заявку</a>
-        <div id="about" class="about section-indent section-position">
-            <h2 class="about__header  heading heading_underline">Немного <span class="text_color">о компании</span></h2>
-            <div class="about__body ">
+    </div>
+    <a href="#popup" class="btn btn_position">Оставить заявку</a>
+    <div id="about" class="about section-indent section-position">
+      <h2 class="about__header  heading heading_underline">Немного <span class="text_color">о компании</span></h2>
+      <div class="about__body ">
 
-                <div class="box about__box">
-                    <ul class="about__list ">
-                        <li class="about__content">
-                            <p class="item__heading">1035</p>
-                            <p class="point">Дел</p>
-                            <p class="doing">Выиграли в судах</p>
-                        </li>
-                        <li class="about__content">
-                            <p class="item__heading">18</p>
-                            <p class="point">Лет</p>
-                            <p class="doing">Опыта работы
-                            </p>
-                        </li>
-                        <li class="about__content">
-                            <p class="item__heading">787</p>
-                            <p class="point">Клиентов</p>
-                            <p class="doing">Обращались к нам</p>
-                        </li>
-                    </ul>
-                    <!-- <p class="text about__text">Поcмотрите <span class="small-text_color">короткое видео</span> про нас
+        <div class="box about__box">
+          <ul class="about__list ">
+            <li class="about__content">
+              <p class="item__heading">1035</p>
+              <p class="point">Дел</p>
+              <p class="doing">Выиграли в судах</p>
+            </li>
+            <li class="about__content">
+              <p class="item__heading">18</p>
+              <p class="point">Лет</p>
+              <p class="doing">Опыта работы
+              </p>
+            </li>
+            <li class="about__content">
+              <p class="item__heading">787</p>
+              <p class="point">Клиентов</p>
+              <p class="doing">Обращались к нам</p>
+            </li>
+          </ul>
+          <!-- <p class="text about__text">Поcмотрите <span class="small-text_color">короткое видео</span> про нас
                         <svg class="arrow about__arrow" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M50.7071 8.70711C51.0976 8.31658 51.0976 7.68342 50.7071 7.29289L44.3431 0.928932C43.9526 0.538408 43.3195 0.538408 42.9289 0.928932C42.5384 1.31946 42.5384 1.95262 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM0 9H50V7H0V9Z"
               fill="#1771F1" />
           </svg>
                     </p> -->
-                </div>
-                <div class="video about__video"></div>
-                <!-- <iframe class="video about__video" width="560" height="315" src="https://www.youtube.com/embed/_nEjLYN0Tx4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            </div>
-
         </div>
+        <div class="video about__video"></div>
+        <!-- <iframe class="video about__video" width="560" height="315" src="https://www.youtube.com/embed/_nEjLYN0Tx4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+      </div>
 
-        <div id="pack" class="pack section-indent section-position">
-            <h2 class="heading heading_underline">Самые интересные <span class="text_color">случаи</span> </h2>
-            <ul class="pack__list">
-                <li class="item">
-                    <div class="item__body">
-                        <div class="box pack__box">
-                            <h3 class="item__heading _indent">Название случая</h3>
-                            <p class="text _indent"><strong>Задача</strong>: снизить кадастровию стоимость</p>
-                            <p class="text _indent"><strong>Размер выгоды</strong>: 300 000</p>
-                            <p class="text _indent"><strong>Что сделали</strong>: кратко описать ситуацию</p>
-                            <!-- <p class="text item__bottom">Подробнее про случай в <span class="small-text_color">коротком видео</span>
+    </div>
+
+    <div id="pack" class="pack section-indent section-position">
+      <h2 class="heading heading_underline">Самые интересные <span class="text_color">случаи</span> </h2>
+      <ul class="pack__list">
+        <li class="item">
+          <div class="item__body">
+            <div class="box pack__box">
+              <h3 class="item__heading _indent">Название случая</h3>
+              <p class="text _indent"><strong>Задача</strong>: снизить кадастровию стоимость</p>
+              <p class="text _indent"><strong>Размер выгоды</strong>: 300 000</p>
+              <p class="text _indent"><strong>Что сделали</strong>: кратко описать ситуацию</p>
+              <!-- <p class="text item__bottom">Подробнее про случай в <span class="small-text_color">коротком видео</span>
                                 <svg class="arrow pack__arrow" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M50.7071 8.70711C51.0976 8.31658 51.0976 7.68342 50.7071 7.29289L44.3431 0.928932C43.9526 0.538408 43.3195 0.538408 42.9289 0.928932C42.5384 1.31946 42.5384 1.95262 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM0 9H50V7H0V9Z"
                   fill="#1771F1" />
               </svg>
                             </p> -->
-                        </div>
-                        <div class="video pack__video pack__image1"></div>
-                        <!-- <iframe class="video pack__video " width="560" height="315" src="https://www.youtube.com/embed/8f9hHoFeXuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-                    </div>
-                </li>
-                <li class="item item__left">
-                    <div class="item__body item__body-left ">
-                        <div class="box  pack__box-right">
-                            <h3 class="item__heading _indent">Название случая</h3>
-                            <p class="text _indent"><strong>Задача</strong>: снизить кадастровию стоимость</p>
-                            <p class="text _indent"><strong>Размер выгоды</strong>: 300 000</p>
-                            <p class="text _indent"><strong>Что сделали</strong>: кратко описать ситуацию</p>
-                            <!-- <p class="text item__bottom item__bottom-right">
+            </div>
+            <div class="video pack__video pack__image1"></div>
+            <!-- <iframe class="video pack__video " width="560" height="315" src="https://www.youtube.com/embed/8f9hHoFeXuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+          </div>
+        </li>
+        <li class="item item__left">
+          <div class="item__body item__body-left ">
+            <div class="box  pack__box-right">
+              <h3 class="item__heading _indent">Название случая</h3>
+              <p class="text _indent"><strong>Задача</strong>: снизить кадастровию стоимость</p>
+              <p class="text _indent"><strong>Размер выгоды</strong>: 300 000</p>
+              <p class="text _indent"><strong>Что сделали</strong>: кратко описать ситуацию</p>
+              <!-- <p class="text item__bottom item__bottom-right">
                                 <svg class="arrow-left pack__arrow" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M50.7071 8.70711C51.0976 8.31658 51.0976 7.68342 50.7071 7.29289L44.3431 0.928932C43.9526 0.538408 43.3195 0.538408 42.9289 0.928932C42.5384 1.31946 42.5384 1.95262 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM0 9H50V7H0V9Z"
                   fill="#1771F1" />
               </svg> Подробнее про случай в <span class="small-text_color">коротком видео</span>
                             </p> -->
-                        </div>
-                        <div class="video pack__video pack__video-left pack__image2"></div>
-                        <!-- <iframe class="video pack__video pack__video-left" width="560" height="315" src="https://www.youtube.com/embed/07jxzRIB_Jw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            </div>
+            <div class="video pack__video pack__video-left pack__image2"></div>
+            <!-- <iframe class="video pack__video pack__video-left" width="560" height="315" src="https://www.youtube.com/embed/07jxzRIB_Jw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe> -->
-                    </div>
-                </li>
-                <li class="item">
-                    <div class="item__body">
-                        <div class="box pack__box">
-                            <h3 class="item__heading _indent">Название случая</h3>
-                            <p class="text _indent"><strong>Задача</strong>: снизить кадастровию стоимость</p>
-                            <p class="text _indent"><strong>Размер выгоды</strong>: 300 000</p>
-                            <p class="text _indent"><strong>Что сделали</strong>: кратко описать ситуацию</p>
-                            <!-- <p class="text item__bottom">Подробнее про случай в <span class="small-text_color">коротком видео</span>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__body">
+            <div class="box pack__box">
+              <h3 class="item__heading _indent">Название случая</h3>
+              <p class="text _indent"><strong>Задача</strong>: снизить кадастровию стоимость</p>
+              <p class="text _indent"><strong>Размер выгоды</strong>: 300 000</p>
+              <p class="text _indent"><strong>Что сделали</strong>: кратко описать ситуацию</p>
+              <!-- <p class="text item__bottom">Подробнее про случай в <span class="small-text_color">коротком видео</span>
                                 <svg class="arrow pack__arrow" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M50.7071 8.70711C51.0976 8.31658 51.0976 7.68342 50.7071 7.29289L44.3431 0.928932C43.9526 0.538408 43.3195 0.538408 42.9289 0.928932C42.5384 1.31946 42.5384 1.95262 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM0 9H50V7H0V9Z"
                   fill="#1771F1" />
               </svg>
                             </p> -->
-                        </div>
-                        <div class="video pack__video pack__image3"></div>
-                        <!-- <iframe class="video pack__video " width="560" height="315" src="https://www.youtube.com/embed/JshfQ0WiEwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-                    </div>
-                </li>
-            </ul>
+            </div>
+            <div class="video pack__video pack__image3"></div>
+            <!-- <iframe class="video pack__video " width="560" height="315" src="https://www.youtube.com/embed/JshfQ0WiEwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+          </div>
+        </li>
+      </ul>
 
-        </div>
+    </div>
 
-        <div id="cons" class="cons section-indent section-position">
-            <div class="cons__left">
-                <h2 class="cons__header heading heading_underline">Бесплатная <span class="text_color">консультация</span></h2>
-                <p class="text cons__text">Если у вас есть какие либо вопросы, оставьте заявку на бесплатную консультацию. Мы с вами свяжемся и решим вашу проблему.</p>
+    <div id="cons" class="cons section-indent section-position">
+      <div class="cons__left">
+        <h2 class="cons__header heading heading_underline">Бесплатная <span class="text_color">консультация</span></h2>
+        <p class="text cons__text">Если у вас есть какие либо вопросы, оставьте заявку на бесплатную консультацию. Мы с
+          вами свяжемся и решим вашу проблему.</p>
+      </div>
+
+      <div class="cons__right box ">
+        <h3 class="form-header item__heading">Получите бесплатную консультацию</h3>
+        <form action="#" class="cons__form first-form__body" id="firstForm">
+          <input type="text" id="firstFormName" placeholder="Введите имя" class="input first-form__input __req"
+            name="name">
+          <input type="tel" id="firstFormPhone" class="input first-form__input __req" name="tel"
+            placeholder="+7 (___) ___-__-__">
+          <button type="submit" class="btn first-form__btn">Оставить заявку</button>
+        </form>
+        <p class="form-desc">Нажимая на кнопку “оставить заявку” вы подтверждаете обработку <a href=""
+            class="data small-text_color">персональных данных</a></p>
+      </div>
+    </div>
+
+    <div id="face" class="face section-indent section-position">
+      <h2 class="face__header heading heading_underline"><span class="text_color">Лица</span> компании</h2>
+
+      <ul class="face__list">
+        <li class="face__item ">
+          <div class="box face__box">
+            <h3 class="item__heading _indent">Фёдоров Виталий Валерьевич</h3>
+            <p class="text _indent"><strong>Должность</strong>: генеральный директор</p>
+            <p class="text _indent"><strong>Работает в компании</strong>: с 2003 года (основатель)</p>
+            <p class="text _indent"><strong>Достижения</strong>: Достижение 1<br> достижение 2<br> достижение 3</p>
+            <div class="social">
+              <a href="" class="social__link">
+                <svg class="social_color" fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"
+                  width="50px" height="50px">
+                  <path
+                    d="M46.137,6.552c-0.75-0.636-1.928-0.727-3.146-0.238l-0.002,0C41.708,6.828,6.728,21.832,5.304,22.445	c-0.259,0.09-2.521,0.934-2.288,2.814c0.208,1.695,2.026,2.397,2.248,2.478l8.893,3.045c0.59,1.964,2.765,9.21,3.246,10.758	c0.3,0.965,0.789,2.233,1.646,2.494c0.752,0.29,1.5,0.025,1.984-0.355l5.437-5.043l8.777,6.845l0.209,0.125	c0.596,0.264,1.167,0.396,1.712,0.396c0.421,0,0.825-0.079,1.211-0.237c1.315-0.54,1.841-1.793,1.896-1.935l6.556-34.077	C47.231,7.933,46.675,7.007,46.137,6.552z M22,32l-3,8l-3-10l23-17L22,32z" />
+                </svg>
+              </a>
+              <a href="" class="social__link social__link-whatsapp">
+                <svg class="what-color" fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"
+                  width="50px" height="50px">
+                  <path
+                    d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z" />
+                </svg>
+              </a>
             </div>
 
-            <div class="cons__right box ">
-                <h3 class="form-header item__heading">Получите бесплатную консультацию</h3>
-                <form action="#" class="cons__form first-form__body" id="firstForm">
-                    <input type="text" id="firstFormName" placeholder="Введите имя" class="input first-form__input __req" name="name">
-                    <input type="tel" id="firstFormPhone" class="input first-form__input __req" name="tel" placeholder="+7 (___) ___-__-__">
-                    <button type="submit" class="btn first-form__btn">Оставить заявку</button>
-                </form>
-                <p class="form-desc">Нажимая на кнопку “оставить заявку” вы подтверждаете обработку <a href="" class="data small-text_color">персональных данных</a></p>
+          </div>
+          <div class="face__image"></div>
+        </li>
+        <li class="face__item ">
+          <div class="box face__box">
+            <h3 class="item__heading _indent">Фёдорова Светлана Валерьевна</h3>
+
+            <p class="text _indent"><strong>Должность</strong>: заместитель директора</p>
+            <p class="text _indent"><strong>Работает в компании</strong>: с 2006 года</p>
+            <p class="text _indent"><strong>Достижения</strong>: Достижение 1<br> достижение 2<br> достижение 3</p>
+            <div class="social">
+              <a href="" class="social__link">
+                <svg class="social_color" fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"
+                  width="50px" height="50px">
+                  <path
+                    d="M46.137,6.552c-0.75-0.636-1.928-0.727-3.146-0.238l-0.002,0C41.708,6.828,6.728,21.832,5.304,22.445	c-0.259,0.09-2.521,0.934-2.288,2.814c0.208,1.695,2.026,2.397,2.248,2.478l8.893,3.045c0.59,1.964,2.765,9.21,3.246,10.758	c0.3,0.965,0.789,2.233,1.646,2.494c0.752,0.29,1.5,0.025,1.984-0.355l5.437-5.043l8.777,6.845l0.209,0.125	c0.596,0.264,1.167,0.396,1.712,0.396c0.421,0,0.825-0.079,1.211-0.237c1.315-0.54,1.841-1.793,1.896-1.935l6.556-34.077	C47.231,7.933,46.675,7.007,46.137,6.552z M22,32l-3,8l-3-10l23-17L22,32z" />
+                </svg>
+              </a>
+              <a href="" class=" social__link social__link-whatsapp">
+                <svg class="what-color" fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"
+                  width="50px" height="50px">
+                  <path
+                    d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z" />
+                </svg>
+              </a>
+              <a href="" class="social__link social__link-instagram">
+                <svg class="inst-color" fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"
+                  width="50px" height="50px">
+                  <path
+                    d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z" />
+                </svg>
+              </a>
             </div>
-        </div>
 
-        <div id="face" class="face section-indent section-position">
-            <h2 class="face__header heading heading_underline"><span class="text_color">Лица</span> компании</h2>
+          </div>
+          <div class="face__image face__image-right"></div>
+        </li>
+      </ul>
 
-            <ul class="face__list">
-                <li class="face__item ">
-                    <div class="box face__box">
-                        <h3 class="item__heading _indent">Фёдоров Виталий Валерьевич</h3>
-                        <p class="text _indent"><strong>Должность</strong>: генеральный директор</p>
-                        <p class="text _indent"><strong>Работает в компании</strong>: с 2003 года (основатель)</p>
-                        <p class="text _indent"><strong>Достижения</strong>: Достижение 1<br> достижение 2<br> достижение 3</p>
-                        <div class="social">
-                            <a href="" class="social__link">
-                                <svg class="social_color" fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
-                <path
-                  d="M46.137,6.552c-0.75-0.636-1.928-0.727-3.146-0.238l-0.002,0C41.708,6.828,6.728,21.832,5.304,22.445	c-0.259,0.09-2.521,0.934-2.288,2.814c0.208,1.695,2.026,2.397,2.248,2.478l8.893,3.045c0.59,1.964,2.765,9.21,3.246,10.758	c0.3,0.965,0.789,2.233,1.646,2.494c0.752,0.29,1.5,0.025,1.984-0.355l5.437-5.043l8.777,6.845l0.209,0.125	c0.596,0.264,1.167,0.396,1.712,0.396c0.421,0,0.825-0.079,1.211-0.237c1.315-0.54,1.841-1.793,1.896-1.935l6.556-34.077	C47.231,7.933,46.675,7.007,46.137,6.552z M22,32l-3,8l-3-10l23-17L22,32z" />
-              </svg>
-                            </a>
-                            <a href="" class="social__link social__link-whatsapp">
-                                <svg class="what-color" fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
-                <path
-                  d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z" />
-              </svg>
-                            </a>
-                        </div>
+    </div>
 
-                    </div>
-                    <div class="face__image"></div>
-                </li>
-                <li class="face__item ">
-                    <div class="box face__box">
-                        <h3 class="item__heading _indent">Фёдорова Светлана Валерьевна</h3>
+    <div id="doc" class="document section-indent section-position">
+      <h2 class="document__header heading heading_underline"><span class="text_color">Лицензии</span> и <span
+          class="text_color">документы</span></h2>
+      <div class="document__body">
+        <picture class="document__photo">
 
-                        <p class="text _indent"><strong>Должность</strong>: заместитель директора</p>
-                        <p class="text _indent"><strong>Работает в компании</strong>: с 2006 года</p>
-                        <p class="text _indent"><strong>Достижения</strong>: Достижение 1<br> достижение 2<br> достижение 3</p>
-                        <div class="social">
-                            <a href="" class="social__link">
-                                <svg class="social_color" fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
-                <path
-                  d="M46.137,6.552c-0.75-0.636-1.928-0.727-3.146-0.238l-0.002,0C41.708,6.828,6.728,21.832,5.304,22.445	c-0.259,0.09-2.521,0.934-2.288,2.814c0.208,1.695,2.026,2.397,2.248,2.478l8.893,3.045c0.59,1.964,2.765,9.21,3.246,10.758	c0.3,0.965,0.789,2.233,1.646,2.494c0.752,0.29,1.5,0.025,1.984-0.355l5.437-5.043l8.777,6.845l0.209,0.125	c0.596,0.264,1.167,0.396,1.712,0.396c0.421,0,0.825-0.079,1.211-0.237c1.315-0.54,1.841-1.793,1.896-1.935l6.556-34.077	C47.231,7.933,46.675,7.007,46.137,6.552z M22,32l-3,8l-3-10l23-17L22,32z" />
-              </svg>
-                            </a>
-                            <a href="" class=" social__link social__link-whatsapp">
-                                <svg class="what-color" fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
-                <path
-                  d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z" />
-              </svg>
-                            </a>
-                            <a href="" class="social__link social__link-instagram">
-                                <svg class="inst-color" fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
-                <path
-                  d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z" />
-              </svg>
-                            </a>
-                        </div>
+          <img src="img/licence1.png" alt="Фото первого документа" class="document__img">
+        </picture>
+        <picture class="document__photo">
 
-                    </div>
-                    <div class="face__image face__image-right"></div>
-                </li>
-            </ul>
+          <img src="img/licence2.png" alt="Фото второго документа" class="document__img">
+        </picture>
+        <picture class="document__photo">
 
-        </div>
+          <img src="img/licence3.png" alt="Фото третьего документа" class="document__img">
+        </picture>
 
-        <div id="doc" class="document section-indent section-position">
-            <h2 class="document__header heading heading_underline"><span class="text_color">Лицензии</span> и <span class="text_color">документы</span></h2>
-            <div class="document__body">
-                <picture class="document__photo">
+      </div>
+    </div>
 
-                    <img src="img/licence1.png" alt="Фото первого документа" class="document__img">
-                </picture>
-                <picture class="document__photo">
-
-                    <img src="img/licence2.png" alt="Фото второго документа" class="document__img">
-                </picture>
-                <picture class="document__photo">
-
-                    <img src="img/licence3.png" alt="Фото третьего документа" class="document__img">
-                </picture>
-
-            </div>
-        </div>
-
-        <div id="quest" class="question section-indent section-position">
-            <h2 class="question__header heading heading_underline">Часто задаваемые <span class="text_color">вопросы</span>
-            </h2>
-            <div class="question__body">
-                <div id="accordion">
-                    <div class="item__heading question__heading">
-                        <div class="question__left">Что я получу, заплатив вам деньги? </div>
-                        <svg class="question__decor" width="100" height="100" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div id="quest" class="question section-indent section-position">
+      <h2 class="question__header heading heading_underline">Часто задаваемые <span class="text_color">вопросы</span>
+      </h2>
+      <div class="question__body">
+        <div id="accordion">
+          <div class="item__heading question__heading">
+            <div class="question__left">Что я получу, заплатив вам деньги? </div>
+            <svg class="question__decor" width="100" height="100" viewBox="0 0 50 50" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <ellipse class="question__decor_color" cx="25" cy="25" rx="25" ry="25" fill="#ECECEC" />
               <path class="question__decor-plus_color" fill-rule="evenodd" clip-rule="evenodd"
                 d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
                 fill="#666666" />
             </svg>
-                    </div>
-                    <div>
-                        <p class="text">
-                            Вы получаете качественно выполненное экспертное заключение, либо отчет об оценке стоимости имущества с учетом ремонтно-восстановительных работ (в случае ущерба).
-                        </p>
-                    </div>
-                    <div class="item__heading question__heading">
-                        <div class="question__left">Насколько у вас квалифицированные сотрудники?
-                        </div>
-                        <svg class="question__decor" width="100" height="100" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <ellipse class="question__decor_color" cx="25" cy="25" rx="25" ry="25" fill="#ECECEC" />
-              <path class="question__decor-plus_color" fill-rule="evenodd" clip-rule="evenodd"
-                d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
-                fill="#666666" />
-            </svg>
-                    </div>
-                    <div>
-                        <p class="text">
-                            Сотрудники высококвалифицированные. Большинство имеет большой опыт работы, в том числе в области судебных экспертов.
-                        </p>
-                    </div>
-                    <div class="item__heading question__heading">
-                        <div class="question__left">Я получил(а) документ об оценки. Что мне делать дальше?</div>
-                        <svg class="question__decor" width="100" height="100" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <ellipse class="question__decor_color" cx="25" cy="25" rx="25" ry="25" fill="#ECECEC" />
-              <path class="question__decor-plus_color" fill-rule="evenodd" clip-rule="evenodd"
-                d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
-                fill="#666666" />
-            </svg>
-                    </div>
-                    <div>
-                        <p class="text">
-                            Клиент к нам обращается уже с какой-то определенной целью. В случае ущерба чаще всего клиент с данным отчетом обращается изначально к виновной стороне. Если сторона отказывается выплачивать сумму, указанную в отчете, то мы предлагаем клиенту помочь составить
-                            претензию. Ну и в конечном результате клиент смело может идти с нашей работой в суд. Либо же у клиента уже идет судебный процесс и мы может выдать письмо-согласие на проведение судебной экспертизы. В таком случае выполненная
-                            экспертиза будет направлена прямиков в суд.
-                        </p>
-
-                    </div>
-                    <div class="item__heading question__heading">
-                        <div class="question__left">Подойдёт ли отчёт для суда?</div>
-                        <svg class="question__decor" width="100" height="100" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <ellipse class="question__decor_color" cx="25" cy="25" rx="25" ry="25" fill="#ECECEC" />
-              <path class="question__decor-plus_color" fill-rule="evenodd" clip-rule="evenodd"
-                d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
-                fill="#666666" />
-            </svg>
-                    </div>
-                    <div>
-                        <p class="text">
-                            Да, конечно. Если клиент планирует обращаться в суд, то мы может указать данную информацию в работе. К тому же – отчет всегда содержит приложение, в которое входят как документы на компанию, так и квалификация эксперта, что тоже не мало важно для подачи
-                            документов в суд.
-                        </p>
-
-                    </div>
-                </div>
+          </div>
+          <div>
+            <p class="text">
+              Вы получаете качественно выполненное экспертное заключение, либо отчет об оценке стоимости имущества с
+              учетом ремонтно-восстановительных работ (в случае ущерба).
+            </p>
+          </div>
+          <div class="item__heading question__heading">
+            <div class="question__left">Насколько у вас квалифицированные сотрудники?
             </div>
+            <svg class="question__decor" width="100" height="100" viewBox="0 0 50 50" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <ellipse class="question__decor_color" cx="25" cy="25" rx="25" ry="25" fill="#ECECEC" />
+              <path class="question__decor-plus_color" fill-rule="evenodd" clip-rule="evenodd"
+                d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
+                fill="#666666" />
+            </svg>
+          </div>
+          <div>
+            <p class="text">
+              Сотрудники высококвалифицированные. Большинство имеет большой опыт работы, в том числе в области судебных
+              экспертов.
+            </p>
+          </div>
+          <div class="item__heading question__heading">
+            <div class="question__left">Я получил(а) документ об оценки. Что мне делать дальше?</div>
+            <svg class="question__decor" width="100" height="100" viewBox="0 0 50 50" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <ellipse class="question__decor_color" cx="25" cy="25" rx="25" ry="25" fill="#ECECEC" />
+              <path class="question__decor-plus_color" fill-rule="evenodd" clip-rule="evenodd"
+                d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
+                fill="#666666" />
+            </svg>
+          </div>
+          <div>
+            <p class="text">
+              Клиент к нам обращается уже с какой-то определенной целью. В случае ущерба чаще всего клиент с данным
+              отчетом обращается изначально к виновной стороне. Если сторона отказывается выплачивать сумму, указанную в
+              отчете, то мы предлагаем клиенту помочь составить
+              претензию. Ну и в конечном результате клиент смело может идти с нашей работой в суд. Либо же у клиента уже
+              идет судебный процесс и мы может выдать письмо-согласие на проведение судебной экспертизы. В таком случае
+              выполненная
+              экспертиза будет направлена прямиков в суд.
+            </p>
 
-            <a href="#popup" id="questBtn" class="btn">Задать вопрос</a>
+          </div>
+          <div class="item__heading question__heading">
+            <div class="question__left">Подойдёт ли отчёт для суда?</div>
+            <svg class="question__decor" width="100" height="100" viewBox="0 0 50 50" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <ellipse class="question__decor_color" cx="25" cy="25" rx="25" ry="25" fill="#ECECEC" />
+              <path class="question__decor-plus_color" fill-rule="evenodd" clip-rule="evenodd"
+                d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
+                fill="#666666" />
+            </svg>
+          </div>
+          <div>
+            <p class="text">
+              Да, конечно. Если клиент планирует обращаться в суд, то мы может указать данную информацию в работе. К
+              тому же – отчет всегда содержит приложение, в которое входят как документы на компанию, так и квалификация
+              эксперта, что тоже не мало важно для подачи
+              документов в суд.
+            </p>
+
+          </div>
         </div>
+      </div>
 
-        <div id="parsad" class="parsad">
+      <a href="#popup" id="questBtn" class="btn">Задать вопрос</a>
+    </div>
 
-        </div>
+    <div id="parsad" class="parsad">
 
-        <div class="popup" id="popup">
-            <a href="#parsad" class="popup__area"></a>
+    </div>
+
+    <div class="popup" id="popup">
+      <a href="#parsad" class="popup__area"></a>
 
 
-            <a href="#parsad" class="popup__close">
-                <svg class="close_color" fill="rgb(197, 197, 197)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
+      <a href="#parsad" class="popup__close">
+        <svg class="close_color" fill="rgb(197, 197, 197)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"
+          width="50px" height="50px">
           <path
             d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z" />
         </svg>
-            </a>
-            <div class="form">
-                <form action="#" id="form" class="form__body">
-                    <h1 class="form__title">Здесь вы можете задать нам вопрос или оставить заявку</h1>
-                    <h2 class="form__subtittle">Заполните форму и наш менеджер свяжется с вами</h2>
-                    <div class="form__item">
-                        <label for="formName" class="form__label">Имя*:</label>
-                        <input id="formName" type="text" name="name" class="form__input _req">
-                    </div>
-                    <div class="form__item">
-                        <label for="lastFormPhone" class="form__label">Номер*:</label>
-                        <input id="lastFormPhone" type="tel" placeholder="+7 (___) ___-__-__" name="tel" class="form__input _req ">
-                    </div>
-                    <div class="form__item">
+      </a>
+      <div class="form">
+        <form action="#" id="form" class="form__body">
+          <h1 class="form__title">Здесь вы можете задать нам вопрос или оставить заявку</h1>
+          <h2 class="form__subtittle">Заполните форму и наш менеджер свяжется с вами</h2>
+          <div class="form__item">
+            <label for="formName" class="form__label">Имя*:</label>
+            <input id="formName" type="text" name="name" class="form__input _req">
+          </div>
+          <div class="form__item">
+            <label for="lastFormPhone" class="form__label">Номер*:</label>
+            <input id="lastFormPhone" type="tel" placeholder="+7 (___) ___-__-__" name="tel" class="form__input _req ">
+          </div>
+          <div class="form__item">
 
-                        <div class="options">
+            <div class="options">
 
-
-                        </div>
-                    </div>
-                    <div class="form__item">
-                        <label for="formMessage" class="form__label">Ваш вопрос:</label>
-                        <textarea name="message" id="formMessage" class="form__input"></textarea>
-                    </div>
-
-
-
-                    <div class="form__item">
-                        <div class="checkbox">
-                            <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
-                            <label for="formAgreement" class="checkbox__label"><span>Я согласен с политикой <a href="">конфиденциальности</a>*</span></label>
-                        </div>
-                    </div>
-                    <button type="submit" class="form__button">Отправить</button>
-                </form>
 
             </div>
+          </div>
+          <div class="form__item">
+            <label for="formMessage" class="form__label">Ваш вопрос:</label>
+            <textarea name="message" id="formMessage" class="form__input"></textarea>
+          </div>
 
 
-        </div>
-    </div>
-    <div id="cont" class="footer">
-        <div class="footer__container">
-            <div class=" section-indent section-position footer__content">
-                <h2 class="footer__header heading heading_underline text_color">Контакты</h2>
-                <div class="footer__body">
-                    <div class="footer__item">
-                        <h4 class="footer__subheading">г. Москва</h4>
-                        <p class="text _indent">ул. Петровская, д. 66 <br>офис 540, м. Фрунзенская</p>
-                        <a target="_blank" href="tel:89995532245" class="text footer_link _indent">8 999 553 22 45</a>
-                        <a target="_blank" href="tel:89145339513" class="text footer_link ">8 914 533 95 13</a>
-                        <a class="small-text footer_link footer__order _indent" href="#popup">Заказать обратный звонок</a>
-                        <a href="" class="text footer_link footer__mail">sam-pad-msk@info.ru</a>
 
-                    </div>
-                    <div class="footer__item">
-                        <h4 class="footer__subheading">г. Иркутск</h4>
-                        <p class="text _indent">ул. Байкальская,<br> д. 236 офис 103</p>
-                        <a target="_blank" href="tel:89507531145" class="text footer_link _indent">8 950 753 11 45</a>
-                        <a target="_blank" href="tel:89149831573" class="text footer_link">8 914 983 15 73</a>
-                        <a class="small-text footer_link footer__order _indent" href="#popup">Заказать обратный звонок </a>
-                        <a href="" class="text footer_link footer__mail">sam-pad-irk@info.ru</a>
-
-                    </div>
-                </div>
-                <a href="" class="politic footer_link">Политика конфиденциальности</a>
+          <div class="form__item">
+            <div class="checkbox">
+              <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
+              <label for="formAgreement" class="checkbox__label"><span>Я согласен с политикой <a
+                    href="">конфиденциальности</a>*</span></label>
             </div>
-        </div>
-    </div>
+          </div>
+          <button type="submit" class="form__button">Отправить</button>
+        </form>
 
-    <script src="/js/menu.js"></script>
-    <script src="/js/accordion.js"></script>
-    <script src="js/first-form.js"></script>
-    <script src="js/script.js"></script>
-    <script src="/js/phone.js"></script>
-    <script src="/js/jquery.inputmask.min.js"></script>
-    <script src="/js/link.js"></script>
-    <script src="/js/lastPhone.js"></script>
+      </div>
+
+
+    </div>
+  </div>
+  <div id="cont" class="footer">
+    <div class="footer__container">
+      <div class=" section-indent section-position footer__content">
+        <h2 class="footer__header heading heading_underline text_color">Контакты</h2>
+        <div class="footer__body">
+          <div class="footer__item">
+            <h4 class="footer__subheading">г. Москва</h4>
+            <p class="text _indent">ул. Петровская, д. 66 <br>офис 540, м. Фрунзенская</p>
+            <a target="_blank" href="tel:89995532245" class="text footer_link _indent">8 999 553 22 45</a>
+            <a target="_blank" href="tel:89145339513" class="text footer_link ">8 914 533 95 13</a>
+            <a class="small-text footer_link footer__order _indent" href="#popup">Заказать обратный звонок</a>
+            <a href="" class="text footer_link footer__mail">sam-pad-msk@info.ru</a>
+
+          </div>
+          <div class="footer__item">
+            <h4 class="footer__subheading">г. Иркутск</h4>
+            <p class="text _indent">ул. Байкальская,<br> д. 236 офис 103</p>
+            <a target="_blank" href="tel:89507531145" class="text footer_link _indent">8 950 753 11 45</a>
+            <a target="_blank" href="tel:89149831573" class="text footer_link">8 914 983 15 73</a>
+            <a class="small-text footer_link footer__order _indent" href="#popup">Заказать обратный звонок </a>
+            <a href="" class="text footer_link footer__mail">sam-pad-irk@info.ru</a>
+
+          </div>
+        </div>
+        <a href="" class="politic footer_link">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </div>
+
+
 </body>
 
 </html>

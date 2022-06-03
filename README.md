@@ -1,6 +1,6 @@
 # Landing "Business-expert".
 
-### Setup project
+### Project setup
 ```
 npm install
 ```
